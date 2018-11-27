@@ -1,0 +1,3 @@
+[submodule "vendor/CMB2"]
+	path = vendor/CMB2
+	url = https://github.com/CMB2/CMB2

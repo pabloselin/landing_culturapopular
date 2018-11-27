@@ -29,4 +29,14 @@
 	 * practising this, we should strive to set a better example in our own work.
 	 */
 
+	 $(function() {
+	 	var submit = $('button#landing-send');
+	 	var form = $('landing-submit');
+	 	form.on('submit', function(event) {
+	 		$.ajax({
+	 			url: landing.ajaxurl
+	 		});
+	 	})
+	 });
+
 })( jQuery );

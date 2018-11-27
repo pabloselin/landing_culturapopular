@@ -1,0 +1,1942 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"wp_print_",
+				"wp_print_styles"
+			],
+			[
+				"Inst",
+				"InstagramEmbed"
+			],
+			[
+				"instagram",
+				"instagrampost"
+			],
+			[
+				"pto",
+				"ptomorrowstr"
+			],
+			[
+				"ptomor",
+				"ptomorrowstr"
+			],
+			[
+				"ptomo",
+				"ptomorrow"
+			],
+			[
+				"Exposit",
+				"ExpositoresHeader"
+			],
+			[
+				"Home",
+				"HomeEventos"
+			],
+			[
+				"tomorrow",
+				"tomorrowstr"
+			],
+			[
+				"sea",
+				"searchState"
+			],
+			[
+				"han",
+				"handleLabelColor"
+			],
+			[
+				"high",
+				"highlightResult"
+			],
+			[
+				"Searc",
+				"SearchEvents"
+			],
+			[
+				"organizer",
+				"organizer_ids"
+			],
+			[
+				"in_",
+				"in_array"
+			],
+			[
+				"Respons",
+				"ResponsiveHelp"
+			],
+			[
+				"Resposni",
+				"ResponsiveHelp"
+			],
+			[
+				"is",
+				"isContentLoaded"
+			],
+			[
+				"FastLink",
+				"FastLinksWrapper"
+			],
+			[
+				"Fastr",
+				"FastLinksWrapper"
+			],
+			[
+				"FastM",
+				"FastMenuItem"
+			],
+			[
+				"Popup",
+				"PopupContext"
+			],
+			[
+				"Pp",
+				"PopupContext"
+			],
+			[
+				"first",
+				"firstNoticia"
+			],
+			[
+				"Contain",
+				"ContainerFastLinks"
+			],
+			[
+				"fir",
+				"firstNoticia"
+			],
+			[
+				"Na",
+				"NavMenuItem"
+			],
+			[
+				"escape",
+				"escapeRegExp"
+			],
+			[
+				"Link",
+				"Link"
+			],
+			[
+				"strip",
+				"strip_tags"
+			],
+			[
+				"search",
+				"searchfield"
+			],
+			[
+				"Styled",
+				"StyledDimmable"
+			],
+			[
+				"breakpo",
+				"breakpointColumnsObj"
+			],
+			[
+				"dias",
+				"diasvisitasguiadas"
+			],
+			[
+				"showEvent",
+				"showEventsTitle"
+			],
+			[
+				"show",
+				"showEvents"
+			],
+			[
+				"filsa2018_tran",
+				"filsa2018_tipostransients"
+			],
+			[
+				"add_rewi",
+				"add_rewrite_endpoint"
+			],
+			[
+				"option",
+				"optionalComponent"
+			],
+			[
+				"mobil",
+				"mobileimg"
+			],
+			[
+				"wp_get_attachmentimg",
+				"wp_get_attachment_image_src"
+			],
+			[
+				"args",
+				"args_filsa2018_content"
+			],
+			[
+				"Menu",
+				"MenuBuilder"
+			],
+			[
+				"only",
+				"onlyComputer"
+			],
+			[
+				"mat",
+				"matchParent"
+			],
+			[
+				"wp_get_attachment_image",
+				"wp_get_attachment_image_src"
+			],
+			[
+				"is_post_typ",
+				"is_post_type_archive"
+			],
+			[
+				"params",
+				"params_content"
+			],
+			[
+				"is_sig",
+				"is_single"
+			],
+			[
+				"refine",
+				"refineSlugFromQuery"
+			],
+			[
+				"query",
+				"queryString"
+			],
+			[
+				"is_object",
+				"is_object_in_term"
+			],
+			[
+				"base",
+				"base_url"
+			],
+			[
+				"React",
+				"ReactHtmlParser"
+			],
+			[
+				"menu_",
+				"menu_noticias"
+			],
+			[
+				"filsa2018",
+				"filsa2018_menu"
+			],
+			[
+				"menu",
+				"menu_principal"
+			],
+			[
+				"with",
+				"withTrackerMounted"
+			],
+			[
+				"Reac",
+				"ReactGA"
+			],
+			[
+				"init",
+				"initReactGa"
+			],
+			[
+				"menumobil",
+				"menumobileitems"
+			],
+			[
+				"wp_get_nav_mne",
+				"wp_get_nav_menu_object"
+			],
+			[
+				"WP_REST_",
+				"WP_REST_Request"
+			],
+			[
+				"wp_dequeu",
+				"wp_dequeue_script"
+			],
+			[
+				"wp_enqueue",
+				"wp_enqueue_scripts"
+			],
+			[
+				"get_regist",
+				"get_registered_nav_menus"
+			],
+			[
+				"Galler",
+				"GalleryNavNext"
+			],
+			[
+				"Gallery",
+				"GalleryNavPrev"
+			],
+			[
+				"cur",
+				"curImage"
+			],
+			[
+				"prev",
+				"prevVid"
+			],
+			[
+				"get",
+				"getCurVidTitle"
+			],
+			[
+				"Marzip",
+				"MarzipanoBrand"
+			],
+			[
+				"a",
+				"activeMenu"
+			],
+			[
+				"hots",
+				"hotspotType"
+			],
+			[
+				"acti",
+				"activeKey"
+			],
+			[
+				"firs",
+				"firstRun"
+			],
+			[
+				"toggle",
+				"toggleHelpWindow"
+			],
+			[
+				"act",
+				"activeKey"
+			],
+			[
+				"text",
+				"renderTextWindow"
+			],
+			[
+				"switc",
+				"switchScene"
+			],
+			[
+				"scene",
+				"sceneTextContent"
+			],
+			[
+				"find",
+				"findScene"
+			],
+			[
+				"Po",
+				"PointText"
+			],
+			[
+				"hotspot",
+				"hotspotCircle"
+			],
+			[
+				"hotspotD",
+				"hotspotData"
+			],
+			[
+				"Hostpo",
+				"HotspotType"
+			],
+			[
+				"device",
+				"deviceControl"
+			],
+			[
+				"deviceO",
+				"deviceOrientationControlMethod"
+			],
+			[
+				"fontaw",
+				"fontawesome-free-solid"
+			],
+			[
+				"Deci",
+				"DeviceOrientationControlMethod"
+			],
+			[
+				"Device",
+				"DeviceOrientationControlMethod"
+			],
+			[
+				"buil",
+				"buildImageTitle"
+			],
+			[
+				"is-accordion",
+				"is-accordion-submenu-parent"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "admin/class-landing_culturapopular-admin.php",
+			"settings":
+			{
+				"buffer_size": 7706,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "landing_culturapopular.php",
+			"settings":
+			{
+				"buffer_size": 2769,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/partials/landing_culturapopular-public-display.php",
+			"settings":
+			{
+				"buffer_size": 788,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<section class=\"form\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-sm\">\n\t\t\t\t\t<form action=\"<?php echo get_permalink();?>\" method=\"POST\">\n\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t<label for=\"email\">Dirección de E-mail</label>\n\t\t\t\t\t\t\t<input id=\"email\" type=\"email\" class=\"form-control\" placeholder=\"Escribe tu email\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t<label for=\"nombre\">Nombre</label>\n\t\t\t\t\t\t\t<input id=\"nombre type=\"text\" class=\"form-control\" placeholder=\"Escribe tu nombre\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t<label for=\"abstract\">Abstract</label>\n\t\t\t\t\t\t\t<textarea name=\"abstract\" id=\"abstract\" cols=\"30\" rows=\"10\"></textarea>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary\">Enviar</button>\n\t\t\t\t\t</form>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</section>",
+			"file": "public/partials/section-formulario.php",
+			"file_size": 804,
+			"file_write_time": 131878169048372366,
+			"settings":
+			{
+				"buffer_size": 817,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "includes/class-landing_culturapopular-activator.php",
+			"settings":
+			{
+				"buffer_size": 1279,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "includes/class-landing_culturapopular-loader.php",
+			"settings":
+			{
+				"buffer_size": 4922,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 90 files for \"activate\"\n\n/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/landing_culturapopular.php:\n   47   * This action is documented in includes/class-landing_culturapopular-activator.php\n   48   */\n   49: function activate_landing_culturapopular() {\n   50  \trequire_once plugin_dir_path( __FILE__ ) . 'includes/class-landing_culturapopular-activator.php';\n   51: \tLanding_culturapopular_Activator::activate();\n   52  }\n   53  \n   ..\n   56   * This action is documented in includes/class-landing_culturapopular-deactivator.php\n   57   */\n   58: function deactivate_landing_culturapopular() {\n   59  \trequire_once plugin_dir_path( __FILE__ ) . 'includes/class-landing_culturapopular-deactivator.php';\n   60: \tLanding_culturapopular_Deactivator::deactivate();\n   61  }\n   62  \n   63: register_activation_hook( __FILE__, 'activate_landing_culturapopular' );\n   64: register_deactivation_hook( __FILE__, 'deactivate_landing_culturapopular' );\n   65  \n   66  /**\n\n/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/includes/class-landing_culturapopular-activator.php:\n   30  \t * @since    1.0.0\n   31  \t */\n   32: \tpublic static function activate() {\n   33  \t\tglobal $wpdb;\n   34  \t\t$dbver = '0.1';\n\n/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/includes/class-landing_culturapopular-deactivator.php:\n   30  \t * @since    1.0.0\n   31  \t */\n   32: \tpublic static function deactivate() {\n   33  \n   34  \t}\n\n/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/vendor/CMB2/tests/bootstrap.php:\n   25  \n   26  /**\n   27:  * Activates the CMB2 plugin in WordPress so it can be tested.\n   28   *\n   29   */\n\n9 matches across 4 files\n",
+			"settings":
+			{
+				"buffer_size": 1782,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 369,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/css/src/landing_culturapopular-public.scss",
+			"settings":
+			{
+				"buffer_size": 57,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/css/landing_culturapopular-public.css",
+			"settings":
+			{
+				"buffer_size": 158534,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "includes/class-landing_culturapopular.php",
+			"settings":
+			{
+				"buffer_size": 6323,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/class-landing_culturapopular-public.php",
+			"settings":
+			{
+				"buffer_size": 3377,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/index.php",
+			"settings":
+			{
+				"buffer_size": 26,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rien",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"wrap",
+				"Emmet: Wrap With Abbreviation"
+			],
+			[
+				"prett",
+				"JsPrettier: Format Code"
+			],
+			[
+				"ww",
+				"Word Wrap: Toggle"
+			],
+			[
+				"pret",
+				"JsPrettier: Format Code"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"rena",
+				"Rename File"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pretti",
+				"JsPrettier: Format Code"
+			],
+			[
+				"ren",
+				"Rename File"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"les",
+				"Set Syntax: Less"
+			],
+			[
+				"le",
+				"Set Syntax: Less"
+			],
+			[
+				"less",
+				"Set Syntax: Less"
+			],
+			[
+				"syntjs",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"syntles",
+				"Set Syntax: Less"
+			],
+			[
+				"pre",
+				"JsPrettier: Format Code"
+			],
+			[
+				"user",
+				"Preferences: Babel – User"
+			],
+			[
+				"bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"syntax less",
+				"Set Syntax: Less"
+			],
+			[
+				"renam",
+				"Rename File"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"pr",
+				"JsPrettier: Format Code"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"babl",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"toggle",
+				"Toggle Comment"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"prefere",
+				"Preferences: Settings"
+			],
+			[
+				"prettie",
+				"Preferences: JsPrettier Settings - User"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"prefe",
+				"Preferences: Settings"
+			],
+			[
+				"PRETT",
+				"JsPrettier: Format Code"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"tood",
+				"Set Syntax: ToDone"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 573.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular",
+		"/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/admin",
+		"/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/public",
+		"/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/public/partials",
+		"/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/vendor"
+	],
+	"file_history":
+	[
+		"/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/landing_culturapopular.php",
+		"/home/donhilo/Documentos/code/php/cchl/public/wp-content/plugins/filsa2018/admin/class-filsa2018-admin.php",
+		"/home/donhilo/Documentos/code/php/cchl/public/wp-content/plugins/filsa2018/includes/class-filsa2018.php",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/SocialHome.js",
+		"/home/donhilo/Escritorio/trjmama.txt",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/SingleNoticiaAlt.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Programa.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/FirstNoticia.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/MasNoticias.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/HomeEventos.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/SliderNoticias.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/BuscaExpositoresMini.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/BuscaLibrosMini.js",
+		"/home/donhilo/Documentos/code/php/cchl/public/wp-content/plugins/filsa2018/dploy.yaml",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Home.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/SingleNoticia.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/App.js",
+		"/home/donhilo/Documentos/code/php/cchl/public/wp-content/plugins/event-invitations/event-invitations.php",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/package.json",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Fecha.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Default.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/utils/trackPage.js",
+		"/home/donhilo/Documentos/code/php/cchl/public/wp-content/plugins/filsa2018/public/class-filsa2018-public.php",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Noticia.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Aviso.js",
+		"/home/donhilo/Escritorio/migracion_chileactua",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/node_modules/react-instagram-embed/es/index.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/VisitasGuiadas.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/FirmaAutores.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/public/index.html",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/node_modules/react-instagram-embed/lib/index.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/ScrollToTop.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/BuscaExpositores.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/LibroMini.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Libro.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/utils/trackEvent.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/registerServiceWorker.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/BuscaLibros.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Invitados.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/public/wp.css",
+		"/home/donhilo/Escritorio/tarjeta_jorge",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/ArchiveNoticias.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/EventSingle.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Event.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/config.json",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/ExpositorMini.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Header.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/MenuRedes.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Galeria.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/ColaboradoresWidget.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/EventMini.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Expositor.js",
+		"/home/donhilo/Documentos/code/php/cchl/public/algolia_importer/importer.php",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/menuItems.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/MenuTop.js",
+		"/home/donhilo/Escritorio/backup_jornadas.html",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Jornadas.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/SearchEvents.js",
+		"/home/donhilo/Escritorio/librosfilsa2018.csv",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/utils/instantSearch.js",
+		"/home/donhilo/Documentos/code/php/cchl/public/wp-content/plugins/event-invitations/dploy.yaml",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Invitado.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Carousel.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Day.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Dias.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/node_modules/slick-carousel/slick/slick.css",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/node_modules/slick-carousel/slick/slick-theme.css",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Colaboradores.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-semantic-ui-theme/tasks/admin/register.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/public/manifest.json",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/faviconDescription.json",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/NotFound.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/FastLinks.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Footer.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/MobileMenuItems.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/README.md",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/utils/api.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/utils/env.js",
+		"/home/donhilo/Escritorio/sites.xml",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/GrupoColaborador.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/IosPwa.js",
+		"/home/donhilo/Documentos/code/php/cchl/phpdocker/php-fpm/Dockerfile",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/MenuMobile.js",
+		"/home/donhilo/.config/sublime-text-3/Packages/JsPrettier/JsPrettier.sublime-settings",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/utils/editUrl.js",
+		"/home/donhilo/Documentos/code/php/trsucio/inicio.php",
+		"/home/donhilo/Documentos/code/php/trsucio/index.php",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/PreHeader.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/.env",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/SocialButtons.js",
+		"/home/donhilo/Documentos/code/webassets/prompt/notas_011018.todo",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/utils/withTracker.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Expositores.js",
+		"/home/donhilo/Documentos/code/php/cchl/public/wp-content/plugins/filsa2018/public/partials/service-worker.js",
+		"/home/donhilo/Documentos/code/php/cchl/public/wp-content/plugins/filsa2018/public/partials/filsa2018-public-display.php",
+		"/home/donhilo/Documentos/code/php/cchl/public/wp-config.php",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/node_modules/react-masonry-css/dist/react-masonry-css.es6.js",
+		"/home/donhilo/Documentos/code/php/cchl/public/wp-content/plugins/filsa2018/filsa2018.php",
+		"/home/donhilo/Documentos/code/js/filsa2018-semantic-ui-theme/package.json",
+		"/home/donhilo/Documentos/code/js/filsa2018-semantic-ui-theme/src/themes/filsa2018/globals/site.variables",
+		"/tmp/fz3temp-1/wp-config.php",
+		"/tmp/fz3temp-1/class-wp-hide-post-public.php",
+		"/tmp/fz3temp-1/wp-hide-post.php",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/index.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/sw-precache-config.js",
+		"/home/donhilo/Documentos/code/php/cchl/public/wp-content/plugins/filsa2018/public/partials/index.html",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/ComponentSelect.js",
+		"/home/donhilo/Documentos/code/php/cchl/public/wp-content/plugins/filsa2018/public/partials/manifest.json",
+		"/home/donhilo/Documentos/code/php/cchl/public/service-worker.js",
+		"/home/donhilo/Escritorio/app-images/manifest.json",
+		"/home/donhilo/Documentos/code/js/filsa2018-semantic-ui-theme/src/themes/default/globals/site.variables",
+		"/media/donhilo/ELA/servers_backup/backupcchl.sh",
+		"/tmp/fz3temp-1/.ftpquota",
+		"/tmp/fz3temp-1/.litespeed_err_flag",
+		"/tmp/fz3temp-1/error_log 2",
+		"/tmp/fz3temp-1/error_log",
+		"/home/donhilo/Documentos/code/js/filsa2018-semantic-ui-theme/gulpfile.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-semantic-ui-theme/src/theme.config",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/assets/wp.css",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/assets/biblioteca/stylesheet.css",
+		"/home/donhilo/Documentos/code/js/filsa2018-semantic-ui-theme/src/_site/globals/site.overrides",
+		"/home/donhilo/Documentos/code/js/filsa2018-semantic-ui-theme/src/themes/filsa2018/site.variables",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Loading.js",
+		"/tmp/fz3temp-1/error.log",
+		"/tmp/fz3temp-1/fpm.log",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/MenuBuilder.js",
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/vendor/query-string/index.js",
+		"/home/donhilo/Documentos/code/php/cchl/public/api_calls/shortwp.php"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 176.0,
+		"where_history":
+		[
+			"*.php"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"activate",
+			"conv",
+			"conv_dbver",
+			"conv",
+			"',\n",
+			"yourprefix"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "admin/class-landing_culturapopular-admin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7706,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7210,
+								7210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 330.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "landing_culturapopular.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1030,
+								1030
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/partials/landing_culturapopular-public-display.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 788,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								289,
+								289
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/partials/section-formulario.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 817,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								158,
+								158
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "includes/class-landing_culturapopular-activator.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1279,
+								1279
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "includes/class-landing_culturapopular-loader.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4922,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31,
+								31
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1782,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										267,
+										275
+									],
+									[
+										451,
+										459
+									],
+									[
+										608,
+										616
+									],
+									[
+										798,
+										806
+									],
+									[
+										871,
+										879
+									],
+									[
+										955,
+										963
+									],
+									[
+										1220,
+										1228
+									],
+									[
+										1495,
+										1503
+									],
+									[
+										1675,
+										1683
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 369,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								273,
+								273
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "public/css/src/landing_culturapopular-public.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								57
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "public/css/landing_culturapopular-public.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 158534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "includes/class-landing_culturapopular.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4750,
+								4750
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1800.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "public/class-landing_culturapopular-public.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2575,
+								2575
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1095.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "public/index.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 26,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 54.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "landing_culturapopular.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"formul",
+				"landing_culturapopular/public/partials/section-formulario.php"
+			],
+			[
+				"publid",
+				"landing_culturapopular/public/partials/landing_culturapopular-public-display.php"
+			],
+			[
+				"load",
+				"landing_culturapopular/includes/class-landing_culturapopular-loader.php"
+			],
+			[
+				"activa",
+				"landing_culturapopular/includes/class-landing_culturapopular-activator.php"
+			],
+			[
+				"admin",
+				"landing_culturapopular/admin/class-landing_culturapopular-admin.php"
+			],
+			[
+				"class",
+				"landing_culturapopular/includes/class-landing_culturapopular.php"
+			],
+			[
+				"pub",
+				"landing_culturapopular/public/class-landing_culturapopular-public.php"
+			],
+			[
+				"publi",
+				"landing_culturapopular/public/class-landing_culturapopular-public.php"
+			],
+			[
+				"class-la",
+				"landing_culturapopular/includes/class-landing_culturapopular.php"
+			],
+			[
+				"landing",
+				"landing_culturapopular/landing_culturapopular.php"
+			],
+			[
+				"public",
+				"landing_culturapopular/public/partials/landing_culturapopular-public-display.php"
+			],
+			[
+				"hom",
+				"filsa2018-frontend/src/components/Home.js"
+			],
+			[
+				"avis",
+				"filsa2018-frontend/src/components/Aviso.js"
+			],
+			[
+				"un",
+				"untitled"
+			],
+			[
+				"",
+				"filsa2018-frontend/src/components/SingleNoticiaAlt.js"
+			],
+			[
+				"singleno",
+				"filsa2018-frontend/src/components/SingleNoticiaAlt.js"
+			],
+			[
+				"noti",
+				"filsa2018-frontend/src/components/Noticia.js"
+			],
+			[
+				"track",
+				"filsa2018-frontend/src/utils/trackPage.js"
+			],
+			[
+				"defa",
+				"filsa2018-frontend/src/components/Default.js"
+			],
+			[
+				"app",
+				"filsa2018-frontend/src/App.js"
+			],
+			[
+				"ingle",
+				"filsa2018-frontend/src/components/SingleNoticia.js"
+			],
+			[
+				"defau",
+				"filsa2018-frontend/src/components/Default.js"
+			],
+			[
+				"single",
+				"filsa2018-frontend/src/components/SingleNoticiaAlt.js"
+			],
+			[
+				"notici",
+				"filsa2018-frontend/src/components/ArchiveNoticias.js"
+			],
+			[
+				"pack",
+				"filsa2018-frontend/package.json"
+			],
+			[
+				"noticia",
+				"filsa2018-frontend/src/components/Noticia.js"
+			],
+			[
+				"arch",
+				"filsa2018-frontend/src/components/ArchiveNoticias.js"
+			],
+			[
+				"dpl",
+				"filsa2018/dploy.yaml"
+			],
+			[
+				"busca",
+				"filsa2018-frontend/src/components/BuscaExpositoresMini.js"
+			],
+			[
+				"buscalib",
+				"filsa2018-frontend/src/components/BuscaLibrosMini.js"
+			],
+			[
+				"evento",
+				"filsa2018-frontend/src/components/HomeEventos.js"
+			],
+			[
+				"firstn",
+				"filsa2018-frontend/src/components/FirstNoticia.js"
+			],
+			[
+				"homeeve",
+				"filsa2018-frontend/src/components/HomeEventos.js"
+			],
+			[
+				"event-i",
+				"event-invitations/event-invitations.php"
+			],
+			[
+				"event",
+				"event-invitations/event-invitations.php"
+			],
+			[
+				"adm",
+				"filsa2018/admin/class-filsa2018-admin.php"
+			],
+			[
+				"publ",
+				"filsa2018/public/class-filsa2018-public.php"
+			],
+			[
+				"progr",
+				"filsa2018-frontend/src/components/Programa.js"
+			],
+			[
+				"def",
+				"filsa2018-frontend/src/components/Default.js"
+			],
+			[
+				"social",
+				"filsa2018-frontend/src/components/SocialHome.js"
+			],
+			[
+				"index.ht",
+				"filsa2018-frontend/public/index.html"
+			],
+			[
+				"socialh",
+				"filsa2018-frontend/src/components/SocialHome.js"
+			],
+			[
+				"visit",
+				"filsa2018-frontend/src/components/VisitasGuiadas.js"
+			],
+			[
+				"prog",
+				"filsa2018-frontend/src/components/Programa.js"
+			],
+			[
+				"packa",
+				"filsa2018-frontend/package.json"
+			],
+			[
+				"exposi",
+				"filsa2018-frontend/src/components/Expositor.js"
+			],
+			[
+				"wp",
+				"filsa2018-frontend/public/wp.css"
+			],
+			[
+				"ga",
+				"filsa2018-frontend/src/components/Galeria.js"
+			],
+			[
+				"galer",
+				"filsa2018-frontend/src/components/Galeria.js"
+			],
+			[
+				"buscaex",
+				"filsa2018-frontend/src/components/BuscaExpositoresMini.js"
+			],
+			[
+				"homeev",
+				"filsa2018-frontend/src/components/HomeEventos.js"
+			],
+			[
+				"min",
+				"filsa2018-frontend/src/components/LibroMini.js"
+			],
+			[
+				"libro.",
+				"filsa2018-frontend/src/components/Libro.js"
+			],
+			[
+				"regis",
+				"filsa2018-frontend/src/registerServiceWorker.js"
+			],
+			[
+				"expos",
+				"filsa2018-frontend/src/components/Expositor.js"
+			],
+			[
+				"expo",
+				"filsa2018-frontend/src/components/Expositor.js"
+			],
+			[
+				"invi",
+				"filsa2018-frontend/src/components/Invitados.js"
+			],
+			[
+				"confi",
+				"filsa2018-frontend/src/config.json"
+			],
+			[
+				"program",
+				"filsa2018-frontend/src/components/Programa.js"
+			],
+			[
+				"regist",
+				"filsa2018-frontend/src/registerServiceWorker.js"
+			],
+			[
+				"busc",
+				"filsa2018-frontend/src/components/BuscaLibrosMini.js"
+			],
+			[
+				"homeve",
+				"filsa2018-frontend/src/components/HomeEventos.js"
+			],
+			[
+				"invit",
+				"filsa2018-frontend/src/components/Invitados.js"
+			],
+			[
+				"gale",
+				"filsa2018-frontend/src/components/Galeria.js"
+			],
+			[
+				"eventos",
+				"filsa2018-frontend/src/components/HomeEventos.js"
+			],
+			[
+				"libr",
+				"filsa2018-frontend/src/components/Libro.js"
+			],
+			[
+				"buscali",
+				"filsa2018-frontend/src/components/BuscaLibros.js"
+			],
+			[
+				"libro",
+				"filsa2018-frontend/src/components/Libro.js"
+			],
+			[
+				"homeeven",
+				"filsa2018-frontend/src/components/HomeEventos.js"
+			],
+			[
+				"menure",
+				"filsa2018-frontend/src/components/MenuRedes.js"
+			],
+			[
+				"head",
+				"filsa2018-frontend/src/components/Header.js"
+			],
+			[
+				"mini",
+				"filsa2018-frontend/src/components/BuscaLibrosMini.js"
+			],
+			[
+				"widg",
+				"filsa2018-frontend/src/components/ColaboradoresWidget.js"
+			],
+			[
+				"buscal",
+				"filsa2018-frontend/src/components/BuscaLibros.js"
+			],
+			[
+				"buscaexpo",
+				"filsa2018-frontend/src/components/BuscaExpositores.js"
+			],
+			[
+				"exposit",
+				"filsa2018-frontend/src/components/Expositor.js"
+			],
+			[
+				"defaul",
+				"filsa2018-frontend/src/components/Default.js"
+			],
+			[
+				"index.h",
+				"filsa2018-frontend/public/index.html"
+			],
+			[
+				"jornadas",
+				"filsa2018-frontend/src/components/Jornadas.js"
+			],
+			[
+				"jornada",
+				"filsa2018-frontend/src/components/Jornadas.js"
+			],
+			[
+				"colabor",
+				"filsa2018-frontend/src/components/ColaboradoresWidget.js"
+			],
+			[
+				"scro",
+				"filsa2018-frontend/src/components/ScrollToTop.js"
+			],
+			[
+				"menuitem",
+				"filsa2018-frontend/src/components/menuItems.js"
+			],
+			[
+				"menuto",
+				"filsa2018-frontend/src/components/MenuTop.js"
+			],
+			[
+				"colabora",
+				"filsa2018-frontend/src/components/ColaboradoresWidget.js"
+			],
+			[
+				"even",
+				"event-invitations/event-invitations.php"
+			],
+			[
+				"socialho",
+				"filsa2018-frontend/src/components/SocialHome.js"
+			],
+			[
+				"carou",
+				"filsa2018-frontend/src/components/Carousel.js"
+			],
+			[
+				"colaborad",
+				"filsa2018-frontend/src/components/ColaboradoresWidget.js"
+			],
+			[
+				"car",
+				"filsa2018-frontend/src/components/Carousel.js"
+			],
+			[
+				"carous",
+				"filsa2018-frontend/src/components/Carousel.js"
+			],
+			[
+				"in",
+				"filsa2018-frontend/public/index.html"
+			],
+			[
+				"dias",
+				"filsa2018-frontend/src/components/Dias.js"
+			],
+			[
+				"day",
+				"filsa2018-frontend/src/components/Day.js"
+			],
+			[
+				"events",
+				"filsa2018-frontend/src/components/EventSingle.js"
+			],
+			[
+				"pro",
+				"filsa2018-frontend/src/components/Programa.js"
+			],
+			[
+				"colab",
+				"filsa2018-frontend/src/components/Colaboradores.js"
+			],
+			[
+				"regisv",
+				"filsa2018-frontend/src/registerServiceWorker.js"
+			],
+			[
+				"registe",
+				"filsa2018-semantic-ui-theme/tasks/admin/register.js"
+			],
+			[
+				"admi",
+				"filsa2018/admin/class-filsa2018-admin.php"
+			],
+			[
+				"pu",
+				"filsa2018/public/class-filsa2018-public.php"
+			],
+			[
+				"mobil",
+				"filsa2018-frontend/src/components/MobileMenuItems.js"
+			],
+			[
+				"menuit",
+				"filsa2018-frontend/src/components/menuItems.js"
+			],
+			[
+				"fastli",
+				"filsa2018-frontend/src/components/FastLinks.js"
+			],
+			[
+				"invitad",
+				"filsa2018-frontend/src/components/Invitado.js"
+			],
+			[
+				"foo",
+				"filsa2018-frontend/src/components/Footer.js"
+			],
+			[
+				"manif",
+				"filsa2018-frontend/public/manifest.json"
+			],
+			[
+				"mani",
+				"filsa2018-frontend/public/manifest.json"
+			],
+			[
+				"manife",
+				"filsa2018-frontend/public/manifest.json"
+			],
+			[
+				"index",
+				"filsa2018-frontend/public/index.html"
+			],
+			[
+				"menuite",
+				"filsa2018-frontend/src/components/menuItems.js"
+			],
+			[
+				"fast",
+				"filsa2018-frontend/src/components/FastLinks.js"
+			],
+			[
+				"menut",
+				"filsa2018-frontend/src/components/MenuTop.js"
+			],
+			[
+				"fastlin",
+				"filsa2018-frontend/src/components/FastLinks.js"
+			],
+			[
+				"mob",
+				"filsa2018-frontend/src/components/MobileMenuItems.js"
+			],
+			[
+				"servi",
+				"filsa2018-frontend/src/registerServiceWorker.js"
+			],
+			[
+				"invitados",
+				"filsa2018-frontend/src/components/Invitados.js"
+			],
+			[
+				"invita",
+				"filsa2018-frontend/src/components/Invitados.js"
+			],
+			[
+				"env",
+				"filsa2018-frontend/src/utils/env.js"
+			],
+			[
+				"api",
+				"filsa2018-frontend/src/utils/api.js"
+			],
+			[
+				"config.j",
+				"filsa2018-frontend/src/config.json"
+			],
+			[
+				"readm",
+				"filsa2018-frontend/README.md"
+			],
+			[
+				"mobilem",
+				"filsa2018-frontend/src/components/MobileMenuItems.js"
+			],
+			[
+				"de",
+				"filsa2018-frontend/src/components/Default.js"
+			],
+			[
+				"visitas",
+				"filsa2018-frontend/src/components/VisitasGuiadas.js"
+			],
+			[
+				"iosp",
+				"filsa2018-frontend/src/components/IosPwa.js"
+			],
+			[
+				"mobilm",
+				"filsa2018-frontend/src/components/MobileMenuItems.js"
+			],
+			[
+				"menumo",
+				"filsa2018-frontend/src/components/MenuMobile.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documentos/code/php/csd/csd_web_mailhog/public/wp-content/themes/universe_theme/csdweb.sublime-project"
+			],
+			[
+				"csd",
+				"~/Documentos/code/php/csd/csd_web_mailhog/public/wp-content/themes/universe_theme/csdweb.sublime-project"
+			],
+			[
+				"cs",
+				"~/Documentos/code/php/csd/csd_web_mailhog/public/wp-content/themes/universe_theme/csdweb.sublime-project"
+			],
+			[
+				"aura",
+				"~/Documentos/code/projects/aura_austral.sublime-project"
+			],
+			[
+				"trol",
+				"~/Documentos/code/js/trolley_nextjs/trolley.sublime-project"
+			],
+			[
+				"tro",
+				"~/Documentos/code/js/trolley_nextjs/trolley.sublime-project"
+			],
+			[
+				"to",
+				"~/Documentos/code/js/trolley_nextjs/trolley.sublime-project"
+			],
+			[
+				"troll",
+				"~/Documentos/code/js/trolley_nextjs/trolley.sublime-project"
+			],
+			[
+				"csds",
+				"~/Documentos/code/php/csd/csd_web_mailhog/public/wp-content/themes/universe_theme/csdweb.sublime-project"
+			],
+			[
+				"conv",
+				"~/Documentos/code/php/csd/csd_web/public/wp-content/themes/universe_theme/csdweb.sublime-project"
+			],
+			[
+				"go",
+				"~/Documentos/code/php/ga/public/wp-content/themes/gonzalo-aguirre/gonzaloaguirre.sublime-project"
+			],
+			[
+				"gon",
+				"~/Documentos/code/php/ga/public/wp-content/themes/gonzalo-aguirre/gonzaloaguirre.sublime-project"
+			],
+			[
+				"pablosel.",
+				"~/Documentos/code/statics/pabloselin.github.io/pabloselin.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 301.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

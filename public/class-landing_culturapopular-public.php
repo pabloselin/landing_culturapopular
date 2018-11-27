@@ -72,9 +72,18 @@ class Landing_culturapopular_Public {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
+		if(get_post_type() == 'landing') {
+			wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/landing_culturapopular-public.css', array(), $this->version, 'all' );
+		}
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/landing_culturapopular-public.css', array(), $this->version, 'all' );
+	}
 
+	public function dequeue_styles() {
+		global $post;
+		if( is_singular('landing') || is_post_type_archive( 'landing' ) ) {
+			wp_dequeue_style( 'twentyseventeen-fonts' );
+			wp_dequeue_style( 'twentyseventeen-style' );
+		}
 	}
 
 	/**
@@ -98,6 +107,23 @@ class Landing_culturapopular_Public {
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/landing_culturapopular-public.js', array( 'jquery' ), $this->version, false );
 
+	}
+
+	public function replace_single_template( $single_template ) {
+		/* Reemplaza todos los singles relacionados con el evento */
+		if( get_post_type() == 'landing' ) {
+			
+			$single_template = plugin_dir_path( __FILE__ ) . 'partials/landing_culturapopular-public-display.php';
+			
+		}
+
+		return $single_template;
+	}
+
+	public static function submit_form() {
+		$data = $_POST['landing_data'];
+
+		var_dump($data);
 	}
 
 }

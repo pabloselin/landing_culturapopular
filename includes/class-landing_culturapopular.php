@@ -156,7 +156,8 @@ class Landing_culturapopular {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-
+		$this->loader->add_action( 'init', $plugin_admin, 'landingcontent' );
+		$this->loader->add_action( 'cmb2_admin_init', $plugin_admin, 'cp_register_options_submenu_for_landing_post_type' );
 	}
 
 	/**
@@ -172,7 +173,8 @@ class Landing_culturapopular {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-
+		$this->loader->add_action( 'template_include', $plugin_public, 'replace_single_template' );
+		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'dequeue_styles', 100);
 	}
 
 	/**

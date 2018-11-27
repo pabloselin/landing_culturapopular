@@ -37,6 +37,11 @@ if ( ! defined( 'WPINC' ) ) {
  */
 define( 'PLUGIN_NAME_VERSION', '1.0.0' );
 
+/*
+* CMB 2 included for metabox creation
+*/
+require_once plugin_dir_path( __FILE__ ) . 'vendor/CMB2/init.php';
+
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-landing_culturapopular-activator.php

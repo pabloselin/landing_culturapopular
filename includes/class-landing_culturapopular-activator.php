@@ -35,7 +35,7 @@ class Landing_culturapopular_Activator {
 		$actver = get_option('land_dbver');
 		
 		if(!get_site_option('land_dbver') || $dbver != get_site_option('land_dbver')) {
-			$table_name = $wpdb->prefix . 'landing';
+			$table_name = $wpdb->prefix . LANDING_TABLENAME;
 			$charset_collate = $wpdb->get_charset_collate();
 
 			$sql = "CREATE TABLE $table_name(

@@ -80,7 +80,7 @@ class Landing_culturapopular_Public {
 
 	public function dequeue_styles() {
 		global $post;
-		if( is_singular('landing') || is_post_type_archive( 'landing' ) ) {
+		if( is_singular('landing') || is_post_type_archive( 'landing' ) == true ) {
 			wp_dequeue_style( 'twentyseventeen-fonts' );
 			wp_dequeue_style( 'twentyseventeen-style' );
 		}
@@ -105,13 +105,25 @@ class Landing_culturapopular_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/landing_culturapopular-public.js', array( 'jquery' ), $this->version, false );
+		if(get_post_type() == 'landing' || is_post_type_archive( 'landing' ) == true) {
 
+			wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/landing-culturapopular.js', array( 'jquery' ), $this->version, false );
+			wp_localize_script( 'landing_culturapopular', 'landing', array('ajaxurl' => admin_url( 'admin-ajax.php' )) );
+
+		}
+
+	}
+
+	public function dequeue_scripts() {
+		global $post;
+		if( is_singular('landing') || is_post_type_archive( 'landing') == true ) {
+			wp_dequeue_script( 'jquery.bootstrap.min' );
+		}
 	}
 
 	public function replace_single_template( $single_template ) {
 		/* Reemplaza todos los singles relacionados con el evento */
-		if( get_post_type() == 'landing' ) {
+		if( get_post_type() == 'landing' || is_post_type_archive( 'landing' ) == true ) {
 			
 			$single_template = plugin_dir_path( __FILE__ ) . 'partials/landing_culturapopular-public-display.php';
 			
@@ -120,10 +132,70 @@ class Landing_culturapopular_Public {
 		return $single_template;
 	}
 
-	public static function submit_form() {
-		$data = $_POST['landing_data'];
+	public static function ajax_submit_form() {
+		$data = $_POST;
+		$sanedata = array();
+		$response = array(
+			'error' => false
+		);
 
-		var_dump($data);
+		if(check_ajax_referer( 'ajax_submit_form', 'nonce', false ) == false) {
+			wp_send_json_error( );
+		}
+
+		$sanedata['email'] = sanitize_email( $data['email'] );
+		$sanedata['nombre'] = sanitize_text_field( $data['nombre'] );
+		$sanedata['abstract'] = sanitize_text_field( $data['abstract'] );
+		
+		$putdata = Landing_culturapopular_Public::put_data($sanedata);
+
+		if($putdata) {
+			$sendmail = Landing_culturapopular_Public::send_confirmation($putdata);
+			
+			if($sendmail) {
+				$response['error'] = false;
+				$response['success'] = 'Gracias!';
+			} else {
+				$response['error'] = 'Error enviando mail';
+			}
+		} else {
+			return $response['error'] = 'Error almacenando la respuesta';
+		}
+
+		wp_send_json_success( $response );
 	}
 
+	public static function put_data($data) {
+		global $wpdb;
+		$tbname = $wpdb->prefix . LANDING_TABLENAME;
+		$timestamp = current_time('mysql');
+		$insert = $wpdb->insert($tbname, array(
+									'time' => $timestamp,
+									'data'	=> serialize($data),
+									'confirmed' => false
+								));
+
+		$insertid = $wpdb->insert_id;
+
+		$data['id'] = $insertid;
+		$data['timestamp'] = $timestamp;
+
+		if($insertid) {
+			return $data;
+		} else {
+			return false;
+		}
+	}
+
+	public static function send_confirmation($msgid) {
+		return true;
+	}
+
+	public function lang_rewrite_tag() {
+		add_rewrite_tag('%lang%', '([^&]+)');
+	}
+
+	public function lang_rewrite_rule() {
+		 add_rewrite_rule('^conferencia-internacional-culturas-populares-latinoamericanas/([^/]*)/?','index.php?post_type=landing&lang=$matches[1]','top');
+	}
 }

@@ -1,3 +1,6 @@
 [submodule "vendor/CMB2"]
 	path = vendor/CMB2
 	url = https://github.com/CMB2/CMB2
+[submodule "vendor/cmb2-field-order"]
+	path = vendor/cmb2-field-order
+	url = https://github.com/rubengc/cmb2-field-order

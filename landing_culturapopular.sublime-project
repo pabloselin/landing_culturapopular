@@ -2,10 +2,23 @@
 	"folders":
 	[
 		{
-			"path": "."
-		},
-		{
-			"path": "node_modules/bootstrap/scss"
+			"path": "/home/donhilo/Documentos/code/php/culturapopular",
+			"folder_exclude_patterns": ["wp-includes",
+										"wp-admin",
+										"wp-content/uploads",
+										"wp-content/upgrade",
+										"akismet",
+										"advanced-custom-fields",
+										"advanced-custom-fields-pro",
+										"ari-adminer",
+										"delightful-downloads",
+										"leaflet-maps-marker",
+										"wp-downloadmanager",
+										"wp-google-maps",
+										"wp-google-maps-pro",
+										"twenty*",
+										"edge"
+										]
 		}
 	]
 }

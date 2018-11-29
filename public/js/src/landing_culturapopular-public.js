@@ -30,11 +30,22 @@
 	 */
 
 	 $(function() {
-	 	var submit = $('button#landing-send');
-	 	var form = $('landing-submit');
+	 	var form = $('#landing-submit');
+	 	var submit = $('button#landing-send', form);
+	 	var message = $('.message-section');
 	 	form.on('submit', function(event) {
-	 		$.ajax({
-	 			url: landing.ajaxurl
+	 		event.preventDefault();
+	 		console.log($(this));
+	 		var data = {
+	 			action: 'ajax_submit_form',
+	 			email: $('input[name="email"]', this).val(),
+	 			nombre: $('input[name="nombre"]', this).val(),
+	 			abstract: $('textarea[name="abstract"]', this).val(),
+	 			nonce: $('input[name="_landingnonce"]', this).val()
+	 		}
+	 		$.post(landing.ajaxurl, data, function(response) {
+	 			form.fadeOut('slow');
+	 			message.append('<div class="alert alert-success">' + response.data.success + '</div>');
 	 		});
 	 	})
 	 });

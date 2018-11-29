@@ -122,6 +122,11 @@ class Landing_culturapopular {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-landing_culturapopular-public.php';
 
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'vendor/class-wp-bootstrap-navwalker.php';
+
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'vendor/cmb2-field-order/cmb2-field-order.php';
+
+
 		$this->loader = new Landing_culturapopular_Loader();
 
 	}
@@ -158,6 +163,7 @@ class Landing_culturapopular {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'init', $plugin_admin, 'landingcontent' );
 		$this->loader->add_action( 'cmb2_admin_init', $plugin_admin, 'cp_register_options_submenu_for_landing_post_type' );
+		$this->loader->add_action( 'cmb2_admin_init', $plugin_admin, 'cp_register_landing_content_fields');
 	}
 
 	/**
@@ -168,13 +174,24 @@ class Landing_culturapopular {
 	 * @access   private
 	 */
 	private function define_public_hooks() {
-
 		$plugin_public = new Landing_culturapopular_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-		$this->loader->add_action( 'template_include', $plugin_public, 'replace_single_template' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'dequeue_styles', 100);
+		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'dequeue_scripts', 100);
+
+
+		$this->loader->add_action( 'wp_ajax_ajax_submit_form', $plugin_public, 'ajax_submit_form');
+		$this->loader->add_action( 'wp_ajax_nopriv_ajax_submit_form', $plugin_public, 'ajax_submit_form');
+		$this->loader->add_action( 'init', $plugin_public, 'lang_rewrite_tag', 10);
+		$this->loader->add_action( 'init', $plugin_public, 'lang_rewrite_rule', 10);
+		$this->loader->add_action( 'template_include', $plugin_public, 'replace_single_template' );
+
+		register_nav_menus( array(
+			'landing_es' => __( 'Menú Landing Español', 'cp' ),
+			'landing_pt' => __( 'Menú Landing Portugués', 'cp' ),
+		) );
 	}
 
 	/**

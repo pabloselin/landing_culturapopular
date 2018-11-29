@@ -13,10 +13,14 @@
 						</div>
 						<div class="form-group">
 							<label for="abstract">Abstract</label>
-							<textarea name="abstract" id="abstract" cols="30" rows="10"></textarea>
+							<textarea class="form-control" name="abstract" id="abstract" cols="30" rows="10"></textarea>
 						</div>
+						<?php wp_nonce_field( 'ajax_submit_form', '_landingnonce', true, true );?>
 						<button name="landing-send" id="landing-send" type="submit" class="btn btn-primary">Enviar</button>
 					</form>
+					<div class="message-section">
+						
+					</div>
 				</div>
 			</div>
 		</div>

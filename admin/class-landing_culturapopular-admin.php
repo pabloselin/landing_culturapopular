@@ -237,6 +237,18 @@ public function cp_register_options_submenu_for_landing_post_type() {
 		'type'    => 'text',
 	) );
 
+	$cmb->add_field( array(
+		'name'    => esc_html__( 'Nombre', 'cmb2' ),
+		'id'      => 'cpl_formtext_nombre_es',
+		'type'    => 'text',
+	) );
+
+	$cmb->add_field( array(
+		'name'    => esc_html__( 'Abstract', 'cmb2' ),
+		'id'      => 'cpl_formtext_abstract_es',
+		'type'    => 'text',
+	) );
+
 
 
 	$cmb->add_field( array(
@@ -253,6 +265,18 @@ public function cp_register_options_submenu_for_landing_post_type() {
 	) );
 
 	$cmb->add_field( array(
+		'name'    => esc_html__( 'Nombre', 'cmb2' ),
+		'id'      => 'cpl_formtext_nombre_pt',
+		'type'    => 'text',
+	) );
+
+	$cmb->add_field( array(
+		'name'    => esc_html__( 'Abstract', 'cmb2' ),
+		'id'      => 'cpl_formtext_abstract_pt',
+		'type'    => 'text',
+	) );
+
+	$cmb->add_field( array(
 		'name'    => esc_html__( 'Configuración Formulario', 'cmb2' ),
 		'desc'    => esc_html__( 'Configuración Formulario', 'cmb2' ),
 		'id'      => 'title_form_conf',
@@ -264,6 +288,32 @@ public function cp_register_options_submenu_for_landing_post_type() {
 		'desc'    => esc_html__( 'Lista de correos, separados por coma y espacio.', 'cmb2' ),
 		'id'      => 'cpl_correos',
 		'type'    => 'text',
+	) );
+
+	$cmb->add_field( array(
+		'name'    => esc_html__( 'Asunto del correo en español', 'cmb2' ),
+		'id'      => 'cpl_subject_es',
+		'type'    => 'text',
+	) );
+
+		$cmb->add_field( array(
+		'name'    => esc_html__( 'Asunto del correo en portugués', 'cmb2' ),
+		'id'      => 'cpl_subject_pt',
+		'type'    => 'text',
+	) );
+
+	$cmb->add_field( array(
+		'name'    => esc_html__( 'Texto de confirmación de recepción del envío en español', 'cmb2' ),
+		'desc'    => esc_html__( 'El contenido del email que confirma la recepción del correo.', 'cmb2' ),
+		'id'      => 'cpl_mailcontent_es',
+		'type'    => 'wysiwyg',
+	) );
+
+		$cmb->add_field( array(
+		'name'    => esc_html__( 'Texto de confirmación de recepción del envío en portugués', 'cmb2' ),
+		'desc'    => esc_html__( 'El contenido del email que confirma la recepción del correo.', 'cmb2' ),
+		'id'      => 'cpl_mailcontent_pt',
+		'type'    => 'wysiwyg',
 	) );
 
 

@@ -15,6 +15,7 @@
 							<label for="abstract">Abstract</label>
 							<textarea class="form-control" name="abstract" id="abstract" cols="30" rows="10"></textarea>
 						</div>
+						<input name="lang" id="lang" type="hidden" value=<?php echo $lang;?> >
 						<?php wp_nonce_field( 'ajax_submit_form', '_landingnonce', true, true );?>
 						<button name="landing-send" id="landing-send" type="submit" class="btn btn-primary">Enviar</button>
 					</form>

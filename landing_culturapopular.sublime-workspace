@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"wp_send_json",
+				"wp_send_json_error"
+			],
+			[
+				"wp_nonce",
+				"wp_nonce_field"
+			],
+			[
 				"wp_send_j",
 				"wp_send_json_success"
 			],
@@ -397,92 +405,27 @@
 			}
 		},
 		{
-			"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/header.php",
+			"file": "public/partials/landing_culturapopular-public-display.php",
 			"settings":
 			{
-				"buffer_size": 6241,
+				"buffer_size": 1701,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/functions.php",
+			"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/style.css",
 			"settings":
 			{
-				"buffer_size": 2977,
-				"encoding": "UTF-8",
+				"buffer_size": 304,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-config.php",
+			"file": "public/partials/navbar.php",
 			"settings":
 			{
-				"buffer_size": 3185,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/page-prueba.php",
-			"settings":
-			{
-				"buffer_size": 3957,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 1550 files for \"<? \"\n\n/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/category-news.php:\n   14              <h2 class=\"title-section_novedad\">Novedades</h2>\n   15              <div class=\"row\">\n   16:              <?            \n   17  \n   18  // The Query\n\n/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/page-home.php:\n   14              <h2 class=\"title-section_novedad\">Novedades</h2>\n   15              <div class=\"row\">\n   16:              <?            \n   17  \n   18  // The Query\n\n/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/page-miri.php:\n   16              <h2 class=\"title-section_novedad\">Novedades</h2>\n   17              <div class=\"row\">\n   18:              <?            \n   19  \n   20  // The Query\n\n/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/single-casos.php:\n   99          <div class=\"col-md-4\">\n  100          <h3>Casos</h3>\n  101:  <?            \n  102  // The Query\n  103  $the_query = new WP_Query(array('category_name'=>'casos'));\n  ...\n  122  ?>\n  123              <h3>Novedades</h3>\n  124:              <?            \n  125  // The Query\n  126  $the_query = new WP_Query(array('category_name'=>'novedades',\n\n/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/single-novedades.php:\n   28            <h4>Últimas Novedades</h4>\n   29        <ul class=\"subnav list-unstyled novedades-recientes\">\n   30:        <?            \n   31  // The Query\n   32  $the_query = new WP_Query(array('category_name'=>'novedades',\n   ..\n   51        <h4>Últimas Divulgaciones</h4>\n   52        <ul class=\"subnav list-unstyled novedades-recientes\">\n   53:          <?            \n   54  // The Query\n   55  $the_query2 = new WP_Query(array('category_name'=>'divulgacion',\n\n7 matches across 5 files\n",
-			"settings":
-			{
-				"buffer_size": 1925,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/category-news.php",
-			"settings":
-			{
-				"buffer_size": 3627,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/page-home.php",
-			"settings":
-			{
-				"buffer_size": 3663,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/page-miri.php",
-			"settings":
-			{
-				"buffer_size": 4043,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/single-casos.php",
-			"settings":
-			{
-				"buffer_size": 4539,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/single-novedades.php",
-			"settings":
-			{
-				"buffer_size": 1858,
+				"buffer_size": 1482,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -491,7 +434,7 @@
 			"file": "public/partials/section-formulario.php",
 			"settings":
 			{
-				"buffer_size": 977,
+				"buffer_size": 1058,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -500,7 +443,7 @@
 			"file": "admin/class-landing_culturapopular-admin.php",
 			"settings":
 			{
-				"buffer_size": 8889,
+				"buffer_size": 12711,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -509,7 +452,16 @@
 			"file": "public/class-landing_culturapopular-public.php",
 			"settings":
 			{
-				"buffer_size": 4691,
+				"buffer_size": 5390,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 669,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -518,8 +470,43 @@
 			"file": "includes/class-landing_culturapopular.php",
 			"settings":
 			{
-				"buffer_size": 6518,
+				"buffer_size": 7225,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "landing_culturapopular.php",
+			"settings":
+			{
+				"buffer_size": 2811,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/class-wp-bootstrap-navwalker.php",
+			"settings":
+			{
+				"buffer_size": 20756,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/src/landing_culturapopular-public.js",
+			"settings":
+			{
+				"buffer_size": 1542,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/landing-culturapopular.js",
+			"settings":
+			{
+				"buffer_size": 72509,
 				"line_ending": "Unix"
 			}
 		},
@@ -536,7 +523,15 @@
 			"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/debug.log",
 			"settings":
 			{
-				"buffer_size": 50223,
+				"buffer_size": 435061,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/cmb2-field-order/cmb2-field-order.php",
+			"settings":
+			{
+				"buffer_size": 3933,
 				"line_ending": "Unix"
 			}
 		}
@@ -553,12 +548,20 @@
 		"selected_items":
 		[
 			[
-				"save",
-				"File: Save All"
+				"ww",
+				"Word Wrap: Toggle"
 			],
 			[
 				"rein",
 				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"save",
+				"File: Save All"
 			],
 			[
 				"rien",
@@ -571,10 +574,6 @@
 			[
 				"prett",
 				"JsPrettier: Format Code"
-			],
-			[
-				"ww",
-				"Word Wrap: Toggle"
 			],
 			[
 				"pret",
@@ -734,11 +733,20 @@
 		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content",
 		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins",
 		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/includes",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public"
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/vendor",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/vendor/cmb2-field-order"
 	],
 	"file_history":
 	[
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/functions.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-config.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/page-prueba.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/category-news.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/page-home.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/page-miri.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/single-casos.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/single-novedades.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/header.php",
 		"/home/donhilo/Documentos/code/php/culturapopular/docker-compose.yml",
 		"/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/public/partials/section-formulario.php",
 		"/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/public/js/landing_culturapopular-public.js",
@@ -857,16 +865,7 @@
 		"/tmp/fz3temp-1/class-wp-hide-post-public.php",
 		"/tmp/fz3temp-1/wp-hide-post.php",
 		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/index.js",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/sw-precache-config.js",
-		"/home/donhilo/Documentos/code/php/cchl/public/wp-content/plugins/filsa2018/public/partials/index.html",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/ComponentSelect.js",
-		"/home/donhilo/Documentos/code/php/cchl/public/wp-content/plugins/filsa2018/public/partials/manifest.json",
-		"/home/donhilo/Documentos/code/php/cchl/public/service-worker.js",
-		"/home/donhilo/Escritorio/app-images/manifest.json",
-		"/home/donhilo/Documentos/code/js/filsa2018-semantic-ui-theme/src/themes/default/globals/site.variables",
-		"/media/donhilo/ELA/servers_backup/backupcchl.sh",
-		"/tmp/fz3temp-1/.ftpquota",
-		"/tmp/fz3temp-1/.litespeed_err_flag"
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/sw-precache-config.js"
 	],
 	"find":
 	{
@@ -914,7 +913,7 @@
 	"groups":
 	[
 		{
-			"selected": 13,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -930,8 +929,8 @@
 						"selection":
 						[
 							[
-								668,
-								668
+								922,
+								922
 							]
 						],
 						"settings":
@@ -944,169 +943,47 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6241,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3381,
-								3381
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/functions.php",
+					"buffer": 1,
+					"file": "public/partials/landing_culturapopular-public-display.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2977,
+						"buffer_size": 1701,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2977,
-								2977
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 648.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-config.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3185,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2387,
-								2387
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 585.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/page-prueba.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3957,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1320,
-								1320
+								1375,
+								1375
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 540.0,
+						"translation.y": 225.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 2,
+					"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1925,
+						"buffer_size": 304,
 						"regions":
 						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										265,
-										268
-									],
-									[
-										538,
-										541
-									],
-									[
-										811,
-										814
-									],
-									[
-										1038,
-										1041
-									],
-									[
-										1214,
-										1217
-									],
-									[
-										1555,
-										1558
-									],
-									[
-										1792,
-										1795
-									]
-								],
-								"scope": ""
-							}
 						},
 						"selection":
 						[
@@ -1117,14 +994,151 @@
 						],
 						"settings":
 						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/partials/navbar.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1482,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								632,
+								632
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/partials/section-formulario.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								843,
+								843
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "admin/class-landing_culturapopular-admin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12711,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8450,
+								8450
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2770.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "public/class-landing_culturapopular-public.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2244,
+								2244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1075.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								669,
+								669
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1134,57 +1148,112 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/category-news.php",
+					"buffer": 8,
+					"file": "includes/class-landing_culturapopular.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3627,
+						"buffer_size": 7225,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2243,
+								2243
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "landing_culturapopular.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2811,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1399,
+								1399
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "vendor/class-wp-bootstrap-navwalker.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20756,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								842,
+								842
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/page-home.php",
+					"buffer": 11,
+					"file": "public/js/src/landing_culturapopular-public.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3663,
+						"buffer_size": 1542,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1331,
+								1331
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1194,213 +1263,36 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/page-miri.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4043,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/single-casos.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4539,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/single-novedades.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1858,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1040,
-								1040
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "public/partials/section-formulario.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 977,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								881,
-								881
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
 					"buffer": 12,
-					"file": "admin/class-landing_culturapopular-admin.php",
-					"semi_transient": false,
+					"file": "public/js/landing-culturapopular.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 8889,
+						"buffer_size": 72509,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5941,
-								5941
+								238,
+								238
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1967.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 13,
-					"file": "public/class-landing_culturapopular-public.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4691,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3344,
-								3344
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1337.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "includes/class-landing_culturapopular.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 6518,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2057.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
 					"file": "landing_culturapopular.sublime-project",
 					"semi_transient": false,
 					"settings":
@@ -1418,30 +1310,31 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 14,
 					"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/debug.log",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 50223,
+						"buffer_size": 435061,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2652,
-								2652
+								353022,
+								353022
 							]
 						],
 						"settings":
@@ -1449,10 +1342,75 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
+						"translation.y": 52030.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "vendor/cmb2-field-order/cmb2-field-order.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3933,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "admin/class-landing_culturapopular-admin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12711,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12232,
+								12232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4780.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1475,11 +1433,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1507,8 +1472,64 @@
 		"selected_items":
 		[
 			[
+				"public-di",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/landing_culturapopular-public-display.php"
+			],
+			[
+				"debu",
+				"public/wp-content/debug.log"
+			],
+			[
 				"admin",
 				"public/wp-content/plugins/landing_culturapopular/admin/class-landing_culturapopular-admin.php"
+			],
+			[
+				"publi",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/landing_culturapopular-public-display.php"
+			],
+			[
+				"class",
+				"public/wp-content/plugins/landing_culturapopular/includes/class-landing_culturapopular.php"
+			],
+			[
+				"gulp",
+				"public/wp-content/plugins/landing_culturapopular/gulpfile.js"
+			],
+			[
+				"navb",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/navbar.php"
+			],
+			[
+				"public-d",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/landing_culturapopular-public-display.php"
+			],
+			[
+				"nav",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/navbar.php"
+			],
+			[
+				"debug",
+				"public/wp-content/debug.log"
+			],
+			[
+				"public",
+				"public/wp-content/plugins/landing_culturapopular/public/class-landing_culturapopular-public.php"
+			],
+			[
+				"landingjs",
+				"public/wp-content/plugins/landing_culturapopular/public/js/landing_culturapopular-public.js"
+			],
+			[
+				"formu",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/section-formulario.php"
+			],
+			[
+				"func",
+				"public/wp-content/themes/culturapopular/functions.php"
+			],
+			[
+				"style",
+				"public/wp-content/themes/culturapopular/style.css"
 			],
 			[
 				"secti",
@@ -1525,14 +1546,6 @@
 			[
 				"page-pr",
 				"public/wp-content/themes/culturapopular/page-prueba.php"
-			],
-			[
-				"publi",
-				"landing_culturapopular/public/class-landing_culturapopular-public.php"
-			],
-			[
-				"class",
-				"landing_culturapopular/includes/class-landing_culturapopular.php"
 			],
 			[
 				"activa",
@@ -1569,10 +1582,6 @@
 			[
 				"class-la",
 				"landing_culturapopular/includes/class-landing_culturapopular.php"
-			],
-			[
-				"public",
-				"landing_culturapopular/public/partials/landing_culturapopular-public-display.php"
 			],
 			[
 				"hom",
@@ -1973,50 +1982,6 @@
 			[
 				"menuite",
 				"filsa2018-frontend/src/components/menuItems.js"
-			],
-			[
-				"fast",
-				"filsa2018-frontend/src/components/FastLinks.js"
-			],
-			[
-				"menut",
-				"filsa2018-frontend/src/components/MenuTop.js"
-			],
-			[
-				"fastlin",
-				"filsa2018-frontend/src/components/FastLinks.js"
-			],
-			[
-				"mob",
-				"filsa2018-frontend/src/components/MobileMenuItems.js"
-			],
-			[
-				"servi",
-				"filsa2018-frontend/src/registerServiceWorker.js"
-			],
-			[
-				"invitados",
-				"filsa2018-frontend/src/components/Invitados.js"
-			],
-			[
-				"invita",
-				"filsa2018-frontend/src/components/Invitados.js"
-			],
-			[
-				"env",
-				"filsa2018-frontend/src/utils/env.js"
-			],
-			[
-				"api",
-				"filsa2018-frontend/src/utils/api.js"
-			],
-			[
-				"config.j",
-				"filsa2018-frontend/src/config.json"
-			],
-			[
-				"readm",
-				"filsa2018-frontend/README.md"
 			]
 		],
 		"width": 0.0
@@ -2099,14 +2064,14 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 484.0,
 	"status_bar_visible": true,
 	"template_settings":

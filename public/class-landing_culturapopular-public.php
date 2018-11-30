@@ -146,20 +146,25 @@ class Landing_culturapopular_Public {
 		$sanedata['email'] = sanitize_email( $data['email'] );
 		$sanedata['nombre'] = sanitize_text_field( $data['nombre'] );
 		$sanedata['abstract'] = sanitize_text_field( $data['abstract'] );
+		$sanedata['language'] = sanitize_text_field( $data['lang'] );
 		
 		$putdata = Landing_culturapopular_Public::put_data($sanedata);
 
 		if($putdata) {
-			$sendmail = Landing_culturapopular_Public::send_confirmation($putdata);
-			
-			if($sendmail) {
+			$sendmail = Landing_culturapopular_Public::send_confirmation($sanedata);
+			$sendadmin = Landing_culturapopular_Public::send_mailadmins($sanedata);
+			if($sendmail == true) {
 				$response['error'] = false;
-				$response['success'] = 'Gracias!';
+				$response['message'] = 'Gracias!';
 			} else {
-				$response['error'] = 'Error enviando mail';
+				$response['error'] = true;
+				$response['message'] = 'Error enviando mail';
 			}
 		} else {
-			return $response['error'] = 'Error almacenando la respuesta';
+			$response['error'] = true;
+			$response['error'] = 'Error almacenando su envío';
+			return $response;
+
 		}
 
 		wp_send_json_success( $response );
@@ -187,8 +192,32 @@ class Landing_culturapopular_Public {
 		}
 	}
 
-	public static function send_confirmation($msgid) {
-		return true;
+	public static function send_confirmation($data) {
+		$lang = $data['language'];
+		$options = get_option( 'cp_page_options' );
+		$correos = $options['cpl_correos'];
+		
+		$subject = $options['cpl_subject_' . $lang ];
+		$content = $options['cpl_mailcontent_' . $lang ];
+
+		$mail = wp_mail( $data['email'], $subject, $content, $headers = '' );
+
+		return $mail;
+
+	}
+
+	public static function send_mailadmins($data) {
+		$lang = $data['language'];
+		$options = get_option( 'cp_page_options' );
+		$correos = $options['cpl_correos'];
+
+		$message = 'Nombre:' . $data['nombre'] . '<br>';
+		$message .= 'Email:' . $data['email'] . '<br>';
+		$message .= 'Abstracto:' . $data['abstract'] . '<br>';
+
+		$mail = wp_mail( $data['email'], 'Recepción de formulario', $message, $headers = '' );
+
+		return $mail;
 	}
 
 	public function lang_rewrite_tag() {

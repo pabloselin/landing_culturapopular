@@ -35,17 +35,22 @@
 	 	var message = $('.message-section');
 	 	form.on('submit', function(event) {
 	 		event.preventDefault();
-	 		console.log($(this));
 	 		var data = {
 	 			action: 'ajax_submit_form',
 	 			email: $('input[name="email"]', this).val(),
 	 			nombre: $('input[name="nombre"]', this).val(),
 	 			abstract: $('textarea[name="abstract"]', this).val(),
+	 			lang: $('input[name="lang"]', this).val(),
 	 			nonce: $('input[name="_landingnonce"]', this).val()
 	 		}
 	 		$.post(landing.ajaxurl, data, function(response) {
 	 			form.fadeOut('slow');
-	 			message.append('<div class="alert alert-success">' + response.data.success + '</div>');
+	 			if(response.data.error === true) {
+	 				message.append('<div class="alert alert-danger">' + response.data.message + '</div>')
+	 			} else if(response.data.error === false) {
+	 				message.append('<div class="alert alert-success">' + response.data.message + '</div>');
+	 			}
+	 			
 	 		});
 	 	})
 	 });

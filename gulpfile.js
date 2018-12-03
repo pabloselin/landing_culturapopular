@@ -22,6 +22,6 @@ gulp.task("concat", function() {
 });
 
 gulp.task("watch", function() {
-	gulp.watch("./public/css/src/**/*.scss", ["sass"]);
+	gulp.watch("./public/css/src/**/*.scss", ["css"]);
 	gulp.watch("./public/js/src/**/*.js", ["concat"]);
 });

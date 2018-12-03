@@ -108,7 +108,37 @@ class Landing_culturapopular_Public {
 		if(get_post_type() == 'landing' || is_post_type_archive( 'landing' ) == true) {
 
 			wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/landing-culturapopular.js', array( 'jquery' ), $this->version, false );
-			wp_localize_script( 'landing_culturapopular', 'landing', array('ajaxurl' => admin_url( 'admin-ajax.php' )) );
+			wp_localize_script( 'landing_culturapopular', 'landing', array(
+				'ajaxurl' => admin_url( 'admin-ajax.php' ),
+				'countries' => plugin_dir_url( __FILE__) . 'data/countries.json',
+				'formlabels' => array(
+					'pais' 	=> array(
+						'es' => 'Seleccione un país',
+						'pt' => 'Selecione um país'
+					),
+					'nombre' => array(
+						'es' => 'Nombre',
+						'pt' => 'Nome'
+					),
+					'mail'	 => array(
+						'es' => 'Dirección de e-mail',
+						'pt' => 'Direção de e-mail'
+					),
+					'tipo'	 => array(
+						'es' => 'Tipo de propuesta',
+						'pt' => 'Tipo de proposta'
+					),
+					'tipo_option_1'	=> array(
+						'es' => 'Ponencias',
+						'pt' => 'Apresentações'
+					),
+					'tipo_option_2'	=> array(
+						'es' => 'Intervenciones',
+						'pt' => 'Intervenções'
+					)
+				) 
+			) 
+		);
 
 		}
 
@@ -145,7 +175,14 @@ class Landing_culturapopular_Public {
 
 		$sanedata['email'] = sanitize_email( $data['email'] );
 		$sanedata['nombre'] = sanitize_text_field( $data['nombre'] );
-		$sanedata['abstract'] = sanitize_text_field( $data['abstract'] );
+		$sanedata['institucion'] = sanitize_text_field( $data['institucion'] );
+		$sanedata['pais'] = sanitize_text_field( $data['pais'] );
+		$sanedata['tipo'] = sanitize_text_field( $data['tipo'] );
+		$sanedata['eje'] = sanitize_text_field( $data['eje'] );
+		$sanedata['tipo_propuesta'] = sanitize_text_field( $data['tipo_propuesta'] );
+		$sanedata['titulo_ponencia'] = sanitize_text_field( $data['titulo_ponencia'] );
+		$sanedata['resumen'] = sanitize_text_field( $data['resumen'] );
+
 		$sanedata['language'] = sanitize_text_field( $data['lang'] );
 		
 		$putdata = Landing_culturapopular_Public::put_data($sanedata);
@@ -175,10 +212,10 @@ class Landing_culturapopular_Public {
 		$tbname = $wpdb->prefix . LANDING_TABLENAME;
 		$timestamp = current_time('mysql');
 		$insert = $wpdb->insert($tbname, array(
-									'time' => $timestamp,
-									'data'	=> serialize($data),
-									'confirmed' => false
-								));
+			'time' => $timestamp,
+			'data'	=> serialize($data),
+			'confirmed' => false
+		));
 
 		$insertid = $wpdb->insert_id;
 
@@ -200,23 +237,37 @@ class Landing_culturapopular_Public {
 		$subject = $options['cpl_subject_' . $lang ];
 		$content = $options['cpl_mailcontent_' . $lang ];
 
+		add_filter('wp_mail_content_type', 'Landing_culturapopular_Public::set_html_content_type' );
 		$mail = wp_mail( $data['email'], $subject, $content, $headers = '' );
-
+		remove_filter('wp_mail_content_type', 'Landing_culturapopular_Public::set_html_content_type');
+		
 		return $mail;
 
+	}
+
+	public static function set_html_content_type( $content_type ) {
+		return 'text/html';
 	}
 
 	public static function send_mailadmins($data) {
 		$lang = $data['language'];
 		$options = get_option( 'cp_page_options' );
 		$correos = $options['cpl_correos'];
-
-		$message = 'Nombre:' . $data['nombre'] . '<br>';
-		$message .= 'Email:' . $data['email'] . '<br>';
-		$message .= 'Abstracto:' . $data['abstract'] . '<br>';
-
+		$message = '<div style="font-size: sans-serif;">';
+			$message .= '<p>Nombre:' . $data['nombre'] . '</p>';
+			$message .= '<p>Email:' . $data['email'] . '</p>';
+			$message .= '<p>Institución:' . $data['institucion'] . '</p>';
+			$message .= '<p>País:' . $data['pais'] . '</p>';
+			$message .= '<p>Tipo de propuesta:' . $data['tipo_propuesta'] . '</p>';
+			$message .= '<p>Eje temático:' . $data['eje'] . '</p>';
+			$message .= '<p>Título ponencia:' . $data['titulo_ponencia'] . '</p>';
+			$message .= '<p>Resumen:' . $data['resumen'] . '</p>';
+		$message .= '</div>';
+		
+		add_filter('wp_mail_content_type', 'Landing_culturapopular_Public::set_html_content_type' );
 		$mail = wp_mail( $data['email'], 'Recepción de formulario', $message, $headers = '' );
-
+		remove_filter('wp_mail_content_type', 'Landing_culturapopular_Public::set_html_content_type');
+		
 		return $mail;
 	}
 
@@ -225,6 +276,18 @@ class Landing_culturapopular_Public {
 	}
 
 	public function lang_rewrite_rule() {
-		 add_rewrite_rule('^conferencia-internacional-culturas-populares-latinoamericanas/([^/]*)/?','index.php?post_type=landing&lang=$matches[1]','top');
+		add_rewrite_rule('^conferencia-internacional-comunicacion-cultura-popular/([^/]*)/?','index.php?post_type=landing&lang=$matches[1]','top');
+	}
+
+	public function landing_title()  {
+		global $post, $wp_query;
+		
+		if(is_post_type_archive( 'landing' ) == true) {
+			$lang = isset($wp_query->query_vars['lang']) ? $wp_query->query_vars['lang'] : 'es';
+			$options = get_option('cp_page_options');
+			$title = $options['cpl_titlehtml_' . $lang];
+			return $title;
+		}
+		
 	}
 }

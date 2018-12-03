@@ -100,6 +100,33 @@ class Landing_culturapopular_Admin {
 
 	}
 
+	public function cmb_show_on_meta_value( $display, $meta_box ) {
+		if ( ! isset( $meta_box['show_on']['meta_key'] ) ) {
+			return $display;
+		}
+
+		$post_id = 0;
+
+	// If we're showing it based on ID, get the current ID
+		if ( isset( $_GET['post'] ) ) {
+			$post_id = $_GET['post'];
+		} elseif ( isset( $_POST['post_ID'] ) ) {
+			$post_id = $_POST['post_ID'];
+		}
+
+		if ( ! $post_id ) {
+			return $display;
+		}
+
+		$value = get_post_meta( $post_id, $meta_box['show_on']['meta_key'], true );
+
+		if ( empty( $meta_box['show_on']['meta_value'] ) ) {
+			return (bool) $value;
+		}
+
+		return $value == $meta_box['show_on']['meta_value'];
+	}
+
 	// Register Custom Post Type
 	public function landingcontent() {
 
@@ -134,7 +161,7 @@ class Landing_culturapopular_Admin {
 		);
 
 		$rewrite = array(
-			'slug' 					=> 'conferencia-internacional-culturas-populares-latinoamericanas',
+			'slug' 					=> 'conferencia-internacional-comunicacion-cultura-popular',
 			'with_front'			=> true,
 			'pages'					=> true,
 			'feeds'					=> false
@@ -152,7 +179,7 @@ class Landing_culturapopular_Admin {
 			'show_in_admin_bar'     => true,
 			'show_in_nav_menus'     => true,
 			'can_export'            => true,
-			'has_archive'           => 'conferencia-internacional-culturas-populares-latinoamericanas',
+			'has_archive'           => 'conferencia-internacional-comunicacion-cultura-popular',
 			'exclude_from_search'   => false,
 			'publicly_queryable'    => true,
 			'capability_type'       => 'page',
@@ -195,6 +222,18 @@ public function cp_register_options_submenu_for_landing_post_type() {
 	) );
 
 	$cmb->add_field( array(
+		'name' => 'Idiomas',
+		'type' => 'title',
+		'id'   => 'title_checkidiomas'
+	) );
+
+	$cmb->add_field( array(
+		'name'    => esc_html__( 'Activar cambiador de idiomas', 'cmb2' ),
+		'id'      => 'langswitcher',
+		'type'    => 'checkbox'
+	) );
+
+	$cmb->add_field( array(
 		'name' => 'Secciones',
 		'desc' => 'Orden de secciones',
 		'type' => 'title',
@@ -215,13 +254,13 @@ public function cp_register_options_submenu_for_landing_post_type() {
 			$items_landing_options[$item->ID] = $item->post_title;
 		}
 
-	$cmb->add_field( array(
-		'name'    => esc_html__( 'Orden de las secciones', 'cmb2' ),
-		'desc'    => esc_html__( 'Arrastrar para reordenar secciones', 'cmb2' ),
-		'id'      => 'order_sections_landing',
-		'type'    => 'order',
-		'options' =>  $items_landing_options
-	) );
+		$cmb->add_field( array(
+			'name'    => esc_html__( 'Orden de las secciones', 'cmb2' ),
+			'desc'    => esc_html__( 'Arrastrar para reordenar secciones', 'cmb2' ),
+			'id'      => 'order_sections_landing',
+			'type'    => 'order',
+			'options' =>  $items_landing_options
+		) );
 	}
 
 	$cmb->add_field( array(
@@ -296,10 +335,24 @@ public function cp_register_options_submenu_for_landing_post_type() {
 		'type'    => 'text',
 	) );
 
-		$cmb->add_field( array(
+	$cmb->add_field( array(
 		'name'    => esc_html__( 'Asunto del correo en portugués', 'cmb2' ),
 		'id'      => 'cpl_subject_pt',
 		'type'    => 'text',
+	) );
+
+	$cmb->add_field( array(
+		'name' => esc_html__('Ejes temáticos en español', 'cmb2'),
+		'id'   => 'cpl_ejes_es',
+		'type' => 'text',
+		'repeatable' => true
+	) );
+
+	$cmb->add_field( array(
+		'name' => esc_html__('Ejes temáticos en portugués', 'cmb2'),
+		'id'   => 'cpl_ejes_pt',
+		'type' => 'text',
+		'repeatable' => true
 	) );
 
 	$cmb->add_field( array(
@@ -309,7 +362,7 @@ public function cp_register_options_submenu_for_landing_post_type() {
 		'type'    => 'wysiwyg',
 	) );
 
-		$cmb->add_field( array(
+	$cmb->add_field( array(
 		'name'    => esc_html__( 'Texto de confirmación de recepción del envío en portugués', 'cmb2' ),
 		'desc'    => esc_html__( 'El contenido del email que confirma la recepción del correo.', 'cmb2' ),
 		'id'      => 'cpl_mailcontent_pt',
@@ -318,10 +371,10 @@ public function cp_register_options_submenu_for_landing_post_type() {
 
 
 	$cmb->add_field( array(
-	'name' => 'Cabecera',
-	'desc' => 'Datos de cabecera',
-	'type' => 'title',
-	'id'   => 'title_header'
+		'name' => 'Cabecera',
+		'desc' => 'Datos de cabecera',
+		'type' => 'title',
+		'id'   => 'title_header'
 	) );
 
 	$cmb->add_field( array(
@@ -356,6 +409,27 @@ public function cp_register_options_submenu_for_landing_post_type() {
 		'name'    => esc_html__( 'Fecha Portugués', 'cmb2' ),
 		'desc'    => esc_html__( 'Texto para la fecha del evento en portugués.', 'cmb2' ),
 		'id'      => 'cpl_date_pt',
+		'type'    => 'text',
+	) );
+
+	$cmb->add_field( array(
+		'name' => 'SEO',
+		'desc' => 'Configuraciones de SEO y otros',
+		'type' => 'title',
+		'id'   => 'title_seo'
+	) );
+
+	$cmb->add_field( array(
+		'name'    => esc_html__( 'Título Español para el HTML', 'cmb2' ),
+		'desc'    => esc_html__( 'Texto para el título de navegador en español.', 'cmb2' ),
+		'id'      => 'cpl_titlehtml_es',
+		'type'    => 'text',
+	) );
+
+	$cmb->add_field( array(
+		'name'    => esc_html__( 'Título Portugués para el HTML', 'cmb2' ),
+		'desc'    => esc_html__( 'Texto para el título de navegador en portugués.', 'cmb2' ),
+		'id'      => 'cpl_titlehtml_pt',
 		'type'    => 'text',
 	) );
 }
@@ -401,6 +475,82 @@ public function cp_register_landing_content_fields() {
 		'id'      => 'cp_content_pt',
 		'type'    => 'wysiwyg',
 	) );
+
+	$cmb_content->add_field( array(
+		'name' => esc_html__('Color de fondo de sección', 'cmb2'),
+		'id'   => 'cp_content_bgcolor',
+		'type' => 'colorpicker'
+	));
+
+	$cmb_content->add_field( array(
+		'name' 	=> esc_html__( 'Funcionalidad adicional', 'cmb2' ),
+		'id'  	=> 'cp_content_function',
+		'type'	=> 'select',
+		'show_option_none' => true,
+		'options' => array(
+			'invitados' 	=> 'Invitados',
+			'documentos' 	=> 'Documentos',
+			'formulario' 	=> 'Formulario',
+			'avisos'	 	=> 'Avisos',
+			'calendario'    => 'Calendario'
+		)
+	) );
+}
+
+public function cp_register_optional_boxes() {
+	$optbox = new_cmb2_box( array(
+		'id'           => 'cp_fields_landing_extracontent',
+		'title'        => esc_html__( 'Información invitados', 'cmb2' ),
+		'object_types' => array( 'landing' ),
+		'show_on'	   => array( 'meta_key' => 'cp_content_function', 'meta_value' => 'invitados')
+		/*
+		 * The following parameters are specific to the options-page box
+		 * Several of these parameters are passed along to add_menu_page()/add_submenu_page().
+		 */
+
+		//'option_key'      => 'cp_page_options', // The option key and admin menu page slug.
+		// 'icon_url'        => '', // Menu icon. Only applicable if 'parent_slug' is left empty.
+		// 'menu_title'      => esc_html__( 'Options', 'cmb2' ), // Falls back to 'title' (above).
+		//'parent_slug'     => 'edit.php?post_type=landing', // Make options page a submenu item of the themes menu.
+		// 'capability'      => 'manage_options', // Cap required to view options-page.
+		// 'position'        => 1, // Menu position. Only applicable if 'parent_slug' is left empty.
+		// 'admin_menu_hook' => 'network_admin_menu', // 'network_admin_menu' to add network-level options page.
+		// 'display_cb'      => false, // Override the options-page form output (CMB2_Hookup::options_page_output()).
+		// 'save_button'     => esc_html__( 'Save Theme Options', 'cmb2' ), // The text for the options-page save button. Defaults to 'Save'.
+		// 'disable_settings_errors' => true, // On settings pages (not options-general.php sub-pages), allows disabling.
+		// 'message_cb'      => 'cp_options_page_message_callback',
+	) );
+
+	$invitados = $optbox->add_field( array(
+		'id'   => 'group_fields_invitados',
+		'name' => 'Invitado',
+		'type' => 'group',
+		'description' => 'Información invitado',
+		'options'     => array(
+			'group_title'   => __( 'Invitado {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+			'add_button'    => __( 'Añadir otro invitado', 'cmb2' ),
+			'remove_button' => __( 'Quitar invitado', 'cmb2' ),
+			'sortable'      => true, // beta
+	)
+	));
+
+	$optbox->add_group_field($invitados, array(
+		'name' 	=> 'Nombre invitado',
+		'id'	=> 'nombre_invitado',
+		'type'  => 'text'
+	));
+
+	$optbox->add_group_field($invitados, array(
+		'name'  => 'Texto invitado',
+		'id'	=> 'bio_invitado',
+		'type'	=> 'wysiwyg'
+	));
+
+	$optbox->add_group_field($invitados, array(
+		'name' => 'Foto invitado',
+		'id'   => 'foto_invitado',
+		'type' => 'file'
+	));
 }
 
 }

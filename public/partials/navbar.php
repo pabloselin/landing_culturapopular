@@ -11,8 +11,8 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<?php 
-				wp_nav_menu( array(
-					'theme_location'  => 'landing_' . $lang,
+			wp_nav_menu( array(
+				'theme_location'  => 'landing_' . $lang,
 					'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
 					'container'       => 'div',
 					'container_class' => 'collapse navbar-collapse',
@@ -21,15 +21,17 @@
 					'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
 					'walker'          => new WP_Bootstrap4_Navwalker(),
 				) );
-			?>
-			<div class="langswitcher btn-group">
-				<?php 
-				$url = get_post_type_archive_link( 'landing' );
-				$es = $url . '/es/';
-				$pt = $url . '/pt/';
 				?>
-				<a class="btn btn-outline-dark es <?php echo ($lang == 'es' ? 'active': '');?>" href="<?php echo $es;?>" title="Español">ES</a>
-				<a class="btn btn-outline-dark pt <?php echo ($lang == 'pt' ? 'active': '');?>" href="<?php echo $pt;?>" title="Portugues">PT</a>
+				<?php if($contents['langswitcher']):?>
+					<div class="langswitcher btn-group">
+						<?php 
+						$url = get_post_type_archive_link( 'landing' );
+						$es = $url . 'es/';
+						$pt = $url . 'pt/';
+						?>
+						<a class="btn btn-outline-dark es <?php echo ($lang == 'es' ? 'active': '');?>" href="<?php echo $es;?>" title="Español">ES</a>
+						<a class="btn btn-outline-dark pt <?php echo ($lang == 'pt' ? 'active': '');?>" href="<?php echo $pt;?>" title="Portugues">PT</a>
+					</div>
+				<?php endif;?>
 			</div>
-		</div>
-	</nav>
+		</nav>

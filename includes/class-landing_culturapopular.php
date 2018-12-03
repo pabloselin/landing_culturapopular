@@ -164,6 +164,8 @@ class Landing_culturapopular {
 		$this->loader->add_action( 'init', $plugin_admin, 'landingcontent' );
 		$this->loader->add_action( 'cmb2_admin_init', $plugin_admin, 'cp_register_options_submenu_for_landing_post_type' );
 		$this->loader->add_action( 'cmb2_admin_init', $plugin_admin, 'cp_register_landing_content_fields');
+		$this->loader->add_action( 'cmb2_admin_init', $plugin_admin, 'cp_register_optional_boxes');
+		$this->loader->add_action( 'cmb2_show_on', $plugin_admin, 'cmb_show_on_meta_value', 10, 2);
 	}
 
 	/**
@@ -187,6 +189,7 @@ class Landing_culturapopular {
 		$this->loader->add_action( 'init', $plugin_public, 'lang_rewrite_tag', 10);
 		$this->loader->add_action( 'init', $plugin_public, 'lang_rewrite_rule', 10);
 		$this->loader->add_action( 'template_include', $plugin_public, 'replace_single_template' );
+		$this->loader->add_filter( 'pre_get_document_title', $plugin_public, 'landing_title', 10 );
 
 		register_nav_menus( array(
 			'landing_es' => __( 'Menú Landing Español', 'cp' ),

@@ -1,5 +1,5 @@
-(function( $ ) {
-	'use strict';
+(function($) {
+	"use strict";
 
 	/**
 	 * All of the code for your public-facing JavaScript source
@@ -29,30 +29,81 @@
 	 * practising this, we should strive to set a better example in our own work.
 	 */
 
-	 $(function() {
-	 	var form = $('#landing-submit');
-	 	var submit = $('button#landing-send', form);
-	 	var message = $('.message-section');
-	 	form.on('submit', function(event) {
-	 		event.preventDefault();
-	 		var data = {
-	 			action: 'ajax_submit_form',
-	 			email: $('input[name="email"]', this).val(),
-	 			nombre: $('input[name="nombre"]', this).val(),
-	 			abstract: $('textarea[name="abstract"]', this).val(),
-	 			lang: $('input[name="lang"]', this).val(),
-	 			nonce: $('input[name="_landingnonce"]', this).val()
-	 		}
-	 		$.post(landing.ajaxurl, data, function(response) {
-	 			form.fadeOut('slow');
-	 			if(response.data.error === true) {
-	 				message.append('<div class="alert alert-danger">' + response.data.message + '</div>')
-	 			} else if(response.data.error === false) {
-	 				message.append('<div class="alert alert-success">' + response.data.message + '</div>');
-	 			}
-	 			
-	 		});
-	 	})
-	 });
+	$(function() {
+		var lang = $("html").attr("lang");
+		console.log(lang);
+		var form = $("#landing-submit");
+		var submit = $("button#landing-send", form);
+		var message = $(".message-section");
+		form.on("submit", function(event) {
+			event.preventDefault();
+			var data = {
+				action: "ajax_submit_form",
+				nombre: $('input[name="nombre"]', this).val(),
+				email: $('input[name="email"]', this).val(),
+				institucion: $('input[name="institucion"]', this).val(),
+				pais: $('select[name="pais"]', this).val(),
+				tipo: $('input[name="tipo_propuesta"]', this).val(),
+				eje: $('input[name="eje"]', this).val(),
+				titulo_ponencia: $('input[name="titulo_ponencia"]', this).val(),
+				resumen: $('textarea[name="resumen"]', this).val(),
+				lang: $('input[name="lang"]', this).val(),
+				nonce: $('input[name="_landingnonce"]', this).val()
+			};
+			$.post(landing.ajaxurl, data, function(response) {
+				form.fadeOut("slow");
+				if (response.data.error === true) {
+					message.append(
+						'<div class="alert alert-danger">' +
+							response.data.message +
+							"</div>"
+					);
+				} else if (response.data.error === false) {
+					message.append(
+						'<div class="alert alert-success">' +
+							response.data.message +
+							"</div>"
+					);
+				}
+			});
+		});
 
-})( jQuery );
+		$.getJSON(landing.countries, function(data) {
+			var options = [];
+			var isolang = lang === "es" ? "spa" : "por";
+			console.log(isolang);
+			$.each(data, function(key, val) {
+				options.push(
+					'<option value="' +
+						val.translations.spa.common +
+						'">' +
+						val.translations[isolang].common +
+						"</option>"
+				);
+			});
+			$("#pais option[value='0']", form).text("Seleccione un país");
+			$("#pais", form).append(options);
+
+			$("#resumen").on("keyup", function() {
+				var words = this.value.match(/\S+/g).length;
+				var max = 300;
+				if (words > max) {
+					// Split the string on first max words and rejoin on spaces
+					var trimmed = $(this)
+						.val()
+						.split(/\s+/, max)
+						.join(" ");
+					// Add a space at the end to make sure more typing creates new words
+					$(this).val(trimmed + " ");
+				} else {
+					//$("#display_count").text(words);					
+					if(words !== null) {
+						var rest = max - words;
+						$("#resto .rest", form).text('/ Quedan ' + rest + ' palabras.');
+					}
+					
+				}
+			});
+		});
+	});
+})(jQuery);

@@ -23,15 +23,15 @@
 						 <div class="form-group">
 						    <label for="tipo_propuesta">Tipo de propuesta</label>
 						    <select class="form-control" id="tipo_propuesta" name="tipo_propuesta">
-						    	<option value="none">Escoja un tipo de propuesta</option>
-						      <option value="ponencias">Ponencias</option>
-						      <option value="intervenciones">Intervenciones</option>
+						    	<option value="0">Escoja un tipo de propuesta</option>
+						      	<option value="ponencias">Ponencias</option>
+						     	<option value="intervenciones">Intervenciones</option>
 						    </select>
 						  </div>
 						  <div class="form-group">
 						    <label for="tipo_propuesta">Eje temático</label>
-						    <select multiple class="form-control" id="eje">
-						    	<option value="none">Escoja un eje temático</option>
+						    <select multiple class="form-control" id="eje" name="eje[]">
+						    	<option value="0">Escoja un eje temático</option>
 						      <?php if(isset($contents['cpl_ejes_' . $lang])) {
 							      		foreach($contents['cpl_ejes_' . $lang] as $eje) {
 							      			echo "<option value='$eje'>$eje</option>";

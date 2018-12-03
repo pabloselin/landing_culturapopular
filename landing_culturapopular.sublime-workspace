@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"plugin_dir",
+				"plugin_dir_url"
+			],
+			[
 				"Landing_cut",
 				"Landing_culturapopular_Public"
 			],
@@ -407,43 +411,25 @@
 			"file": "public/class-landing_culturapopular-public.php",
 			"settings":
 			{
-				"buffer_size": 6331,
+				"buffer_size": 8869,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/partials/landing_culturapopular-public-display.php",
+			"file": "includes/class-landing_culturapopular.php",
 			"settings":
 			{
-				"buffer_size": 1701,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/partials/section-formulario.php",
-			"settings":
-			{
-				"buffer_size": 1135,
+				"buffer_size": 7507,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/debug.log",
+			"file": "admin/class-landing_culturapopular-admin.php",
 			"settings":
 			{
-				"buffer_size": 528279,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"read_only": true
-			}
-		},
-		{
-			"file": "gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 721,
+				"buffer_size": 21145,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -452,20 +438,64 @@
 			"file": "public/js/src/landing_culturapopular-public.js",
 			"settings":
 			{
-				"buffer_size": 1758,
+				"buffer_size": 3344,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "Package Control Messages\n========================\n\nLog Highlight\n-------------\n\n  # Log Highlight for Sublime Text\n  \n  [![Package Control](https://packagecontrol.herokuapp.com/downloads/Log%20Highlight.svg?style=round-square)](https://packagecontrol.io/packages/Log%20Highlight)\n  [![PayPal](https://img.shields.io/badge/paypal-donate-blue.svg)][PM]\n  \n  Log Highlight helps to view a log (any type) with customizable error/warning syntax & color scheme & extensible severity levels.\n  Open a log file (like .log) and run __*Log Highlight*__ in the context menu or __*Log Highlight : Highlight Error/Warning*__ in the command palette.\n  \n  (Compile Log - auto-highlight off)  \n  ![Image of Log Highlight](https://raw.githubusercontent.com/poucotm/Links/master/image/Log-Highlight/lh-log.gif)\n  \n  (Build Window - auto-highlight on)  \n  ![Image of Log Highlight](https://raw.githubusercontent.com/poucotm/Links/master/image/Log-Highlight/lh-build.gif)\n  \n  (System Log - auto-highlight off)  \n  ![Image of Log Highlight](https://raw.githubusercontent.com/poucotm/Links/master/image/Log-Highlight/lh-system.gif)\n  \n  ## Features\n  ***********\n  \n   * Customizable Syntax & Color Scheme\n   * Extensible Severity Levels\n   * Separate log types : \"compile\", \"system\"\n   * Add Bookmarks Automatically for Navigating Errors/Warnings with customizable icons\n   * Support Go To Position in a Log by `result_file_regex`\n   * Search a Base Directory Automatically for Relative Path Link\n   * Summary Output Panel\n   * Auto Refresh for Multiple Logs\n   * Continuous Tracking for Multiple Logs\n   * Enable Build Window (Output Panel)\n  \n  #### Customizable Syntax & Color Scheme\n  \n  After changing syntax and color scheme in __*Log Highlight.sublime-settings*__, run __*Log Highlight: Generate Custom Syntax & Theme*__ command. You may have to restart sublime text once.\n  \n  #### Extensible Severity Levels\n  \n  You can add, remove, change severity levels like debug/notice/emergency in __*Log Highlight.sublime-settings*__, run __*Log Highlight: Generate Custom Syntax & Theme*__ command. You may have to restart sublime text once.\n  \n  #### Separate Log Types\n  \n  You can set the log type in settings  \n  . \"compile\" type : link / summary / bookmark can be activated  \n  . \"system\" type  : color-highlight only (fast)\n  \n  #### Bookmarks\n  \n  When errors/warnings found, it will add bookmarks for them for each icon. Bookmark navigation is enabled(restored) from v1.8.0. You can use bookmark keys like __*F2*__.\n  \n  #### Go To Position\n  \n  By double-click, you can go to positions of links like `\"../../abc.cpp\", 32` or `./abc.v line 234` in a log. For relative path, it may automatically search a base directory near the log file\n  \n  #### Summary Output Panel\n  \n  By default, it summarizes error/warning list in a new output panel at the bottom of window. It is useful to debug without monitoring the log file directly. But do not close the log file, it is needed to get the event. (default keymap - toggle : alt+f12, hide : ESC)\n  \n  #### More Flexible Style Syntax\n  \n  You can highlight links and quotes inside \"begin regex\", \"end regex\" and \"match regex\" by using special words `{{{LINK}}}`, `{{{QUOTE}}}`. It can be used for the following gcc style error/warning message : `./src/abc.cpp:40:2 error: unknown escape seque ...`\n  \n  #### Auto Refresh for Multiple Logs\n  \n  When the log files are updated, it automatically refreshes the bookmarks, summary output panel. There's some inertial delays for smooth action.\n  \n  #### Continuous Tracking for Multiple Logs\n  \n  If there are open files which already log-highlighted when sublime text restart, it will track all again. (ST3 only)\n  \n  #### Enable Build Window (Output Panel)\n  \n  Log Highlight can be used for Build Window or Unsaved View. But relative path link won't be used because the absolute path is unknown. In order to use relative path, you should set like the following: `output_view.settings().set('filepath', [PATH])` output_view is the handle of your output panel view.\n  \n  ### Settings\n  \n  Please, refer to [__Log Highlight.sublime-settings__](https://github.com/poucotm/Log-Highlight/blob/master/Log%20Highlight.sublime-settings), Available Icons : [__Icon List__](https://github.com/poucotm/Log-Highlight/tree/master/icons)\n  \n  - __Regular Expression Pattern in Settings__\n  \n  *Usage*   : `[ \"begin regex\", \"end regex\" ] or [ \"match regex\", \"\" ]`  \n  *Caution* : avoid OR '|' and separate them, it can make an unexpected result.\n  \n  example)\n  ```java\n  Error-[SE] Syntax error :\n     ./src/macros/uvm_object_defines.svh line: 764: token is 'for'\n  --> [ \"^Error-\\\\[\", \"^\\\\s*[\\\\n]\" ] // Error-[ ~ next empty line (multi-line)\n  \n  error ../src/foo.cpp:40\n  --> [ \"^(?i)error\", \"[\\\\r\\\\n]\" ] // single line\n  \n  ../src/foo.cpp:40 error:\n  --> [ \"^{{{LINK}}}?[^\\\\r\\\\n]*?(?i)error\", \"[\\\\r\\\\n]\" ] // single line\n  ```\n  \n  - __Restore Settings__\n  \n  Use __*Log Highlight: Erase Custom Syntax & Theme*__ in the command palette Or  \n  Just remove __*Packages/User/Log Highlight.tmLanguage*__, __*Log Highlight.hidden-tmTheme*__\n  \n  ### Donate\n  \n  [![Doate Image](https://raw.githubusercontent.com/poucotm/Links/master/image/PayPal/donate-paypal.png)][PM]  \n  Thank you for donating. It is helpful to continue to improve the plug-in.\n  \n  ### Issues\n  \n  When you have an issue, tell me through [https://github.com/poucotm/Log-Highlight/issues](https://github.com/poucotm/Log-Highlight/issues), or send me an e-mail poucotm@gmail.com\n  \n  [PP]:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=89YVNDSC7DZHQ \"PayPal\"\n  [PM]:https://www.paypal.me/poucotm/2.5 \"PayPal\"\n",
+			"file": "public/partials/section-landing.php",
 			"settings":
 			{
-				"buffer_size": 5661,
+				"buffer_size": 722,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/css/src/landing_culturapopular-public.scss",
+			"settings":
+			{
+				"buffer_size": 1348,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/partials/component-formulario.php",
+			"settings":
+			{
+				"buffer_size": 2889,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/partials/component-invitados.php",
+			"settings":
+			{
+				"buffer_size": 416,
+				"encoding": "UTF-8",
 				"line_ending": "Unix",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
+				"name": "<div class=\"container\">"
+			}
+		},
+		{
+			"file": "public/partials/landing_culturapopular-public-display.php",
+			"settings":
+			{
+				"buffer_size": 2141,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/debug.log",
+			"settings":
+			{
+				"buffer_size": 1309848,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -481,24 +511,36 @@
 		"selected_items":
 		[
 			[
-				"installp",
-				"Package Control: Install Package"
-			],
-			[
-				"log",
-				"Set Syntax: Logfile"
-			],
-			[
-				"ww",
-				"Word Wrap: Toggle"
+				"prett",
+				"JsPrettier: Format Code"
 			],
 			[
 				"rein",
 				"Indentation: Reindent Lines"
 			],
 			[
+				"ww",
+				"Word Wrap: Toggle"
+			],
+			[
+				"renam",
+				"Rename File"
+			],
+			[
 				"reind",
 				"Indentation: Reindent Lines"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"installp",
+				"Package Control: Install Package"
+			],
+			[
+				"log",
+				"Set Syntax: Logfile"
 			],
 			[
 				"save",
@@ -511,10 +553,6 @@
 			[
 				"wrap",
 				"Emmet: Wrap With Abbreviation"
-			],
-			[
-				"prett",
-				"JsPrettier: Format Code"
 			],
 			[
 				"pret",
@@ -575,10 +613,6 @@
 			[
 				"syntax less",
 				"Set Syntax: Less"
-			],
-			[
-				"renam",
-				"Rename File"
 			],
 			[
 				"js",
@@ -672,35 +706,36 @@
 		"/home/donhilo/Documentos/code/php/culturapopular",
 		"/home/donhilo/Documentos/code/php/culturapopular/public",
 		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/js",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/js/src",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/vendor",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/vendor/cmb2-field-order"
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular"
 	],
 	"file_history":
 	[
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/partials/component-formulario.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/debug.log",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/partials/navbar.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/gulpfile.js",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/admin/class-landing_culturapopular-admin.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/includes/class-landing_culturapopular.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/partials/section-landing.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/vendor/class-wp-bootstrap-navwalker.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/css/src/landing_culturapopular-public.scss",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/partials/landing_culturapopular-public-display.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/js/src/landing_culturapopular-public.js",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/class-landing_culturapopular-public.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/header.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/partials/section-formulario.php",
+		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/data/countries.json",
+		"/home/donhilo/Documentos/code/webassets/koeñum.cl/index.html",
 		"/home/donhilo/Documentos/code/php/culturapopular/phpdocker/php-fpm/Dockerfile",
 		"/home/donhilo/Documentos/code/php/culturapopular/phpdocker/php-fpm/php-ini-overrides.ini",
 		"/home/donhilo/Documentos/code/php/csd/csd_web_mailhog/phpdocker/nginx/nginx.conf",
 		"/home/donhilo/Documentos/code/php/csd/csd_web_mailhog/phpdocker/php-fpm/Dockerfile",
 		"/home/donhilo/Documentos/code/php/csd/csd_web_mailhog/phpdocker/php-fpm/php-ini-overrides.ini",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/js/src/landing_culturapopular-public.js",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/partials/section-formulario.php",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/admin/class-landing_culturapopular-admin.php",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/partials/landing_culturapopular-public-display.php",
 		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/style.css",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/partials/navbar.php",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/class-landing_culturapopular-public.php",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/gulpfile.js",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/includes/class-landing_culturapopular.php",
 		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/landing_culturapopular.php",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/vendor/class-wp-bootstrap-navwalker.php",
 		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/public/js/landing-culturapopular.js",
 		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/plugins/landing_culturapopular/landing_culturapopular.sublime-project",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/debug.log",
 		"/home/donhilo/Documentos/code/php/culturapopular/docker-compose.yml",
 		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/functions.php",
 		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-config.php",
@@ -710,7 +745,6 @@
 		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/page-miri.php",
 		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/single-casos.php",
 		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/single-novedades.php",
-		"/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/themes/culturapopular/header.php",
 		"/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/public/partials/section-formulario.php",
 		"/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/public/js/landing_culturapopular-public.js",
 		"/home/donhilo/Documentos/code/php/cp/public/wp-content/plugins/landing_culturapopular/public/class-landing_culturapopular-public.php",
@@ -804,16 +838,11 @@
 		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/utils/env.js",
 		"/home/donhilo/Escritorio/sites.xml",
 		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/GrupoColaborador.js",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/IosPwa.js",
-		"/home/donhilo/Documentos/code/php/cchl/phpdocker/php-fpm/Dockerfile",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/MenuMobile.js",
-		"/home/donhilo/.config/sublime-text-3/Packages/JsPrettier/JsPrettier.sublime-settings",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/utils/editUrl.js",
-		"/home/donhilo/Documentos/code/php/trsucio/inicio.php"
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/IosPwa.js"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -828,6 +857,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$consulta",
+			"consultas",
+			"Consultas",
+			"<p>",
+			"$invitado",
+			"Invitado",
+			"invitado",
+			"theme_support",
+			"institucion",
+			"resumen",
+			"abstract",
+			"href",
+			"200",
+			"ejes",
+			"institucion",
+			"exampleFormControlSelect1",
+			"nombre",
+			"Nombre",
+			"nombre",
 			"lang",
 			"private",
 			"<? ",
@@ -859,7 +907,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -868,20 +916,19 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6331,
+						"buffer_size": 8869,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								634,
+								634
 							]
 						],
 						"settings":
 						{
-							"history_list_is_closing": true,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
@@ -889,24 +936,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "public/partials/landing_culturapopular-public-display.php",
+					"file": "includes/class-landing_culturapopular.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1701,
+						"buffer_size": 7507,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								5514,
+								5514
 							]
 						],
 						"settings":
@@ -915,37 +962,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 0,
-					"file": "public/class-landing_culturapopular-public.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6331,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4940,
-								4940
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 967.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -953,19 +970,136 @@
 				},
 				{
 					"buffer": 2,
-					"file": "public/partials/section-formulario.php",
+					"file": "admin/class-landing_culturapopular-admin.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1135,
+						"buffer_size": 21145,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3275,
+								3275
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1260.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/js/src/landing_culturapopular-public.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1239,
+								1239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 375.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/partials/section-landing.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 722,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								722,
+								722
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "public/css/src/landing_culturapopular-public.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								520,
+								520
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "public/partials/component-formulario.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								957,
+								957
 							]
 						],
 						"settings":
@@ -981,14 +1115,1085 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 7,
+					"file": "public/partials/component-invitados.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								211,
+								211
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<div class=\"container\">",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "public/partials/landing_culturapopular-public-display.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2141,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								415,
+								415
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "/home/donhilo/Documentos/code/php/culturapopular/public/wp-content/debug.log",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 528279,
+						"buffer_size": 1309848,
 						"regions":
 						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"regions":
+								[
+									[
+										0,
+										164
+									],
+									[
+										164,
+										328
+									],
+									[
+										328,
+										492
+									],
+									[
+										492,
+										649
+									],
+									[
+										649,
+										806
+									],
+									[
+										806,
+										963
+									],
+									[
+										963,
+										1120
+									],
+									[
+										1120,
+										1277
+									],
+									[
+										1277,
+										1434
+									],
+									[
+										1434,
+										1591
+									],
+									[
+										1591,
+										1748
+									],
+									[
+										1748,
+										1905
+									],
+									[
+										1905,
+										2062
+									],
+									[
+										2062,
+										2219
+									],
+									[
+										2219,
+										2376
+									],
+									[
+										2376,
+										2533
+									],
+									[
+										3069,
+										3226
+									],
+									[
+										4298,
+										4455
+									],
+									[
+										257744,
+										257928
+									],
+									[
+										257928,
+										258112
+									],
+									[
+										258112,
+										258296
+									],
+									[
+										258296,
+										258480
+									],
+									[
+										354696,
+										354912
+									],
+									[
+										355448,
+										355664
+									],
+									[
+										356941,
+										357099
+									],
+									[
+										357099,
+										357265
+									],
+									[
+										357265,
+										357415
+									],
+									[
+										357415,
+										357577
+									],
+									[
+										357577,
+										357743
+									],
+									[
+										357743,
+										357899
+									],
+									[
+										358028,
+										358186
+									],
+									[
+										358186,
+										358352
+									],
+									[
+										358352,
+										358502
+									],
+									[
+										358502,
+										358664
+									],
+									[
+										358664,
+										358830
+									],
+									[
+										358830,
+										358986
+									],
+									[
+										363061,
+										363219
+									],
+									[
+										363219,
+										363385
+									],
+									[
+										363385,
+										363535
+									],
+									[
+										363535,
+										363697
+									],
+									[
+										363697,
+										363863
+									],
+									[
+										363863,
+										364019
+									],
+									[
+										364148,
+										364306
+									],
+									[
+										364306,
+										364472
+									],
+									[
+										364472,
+										364622
+									],
+									[
+										364622,
+										364784
+									],
+									[
+										364784,
+										364950
+									],
+									[
+										364950,
+										365106
+									],
+									[
+										381253,
+										381411
+									],
+									[
+										381411,
+										381577
+									],
+									[
+										381577,
+										381727
+									],
+									[
+										381727,
+										381889
+									],
+									[
+										381889,
+										382055
+									],
+									[
+										382055,
+										382211
+									],
+									[
+										382340,
+										382498
+									],
+									[
+										382498,
+										382664
+									],
+									[
+										382664,
+										382814
+									],
+									[
+										382814,
+										382976
+									],
+									[
+										382976,
+										383142
+									],
+									[
+										383142,
+										383298
+									],
+									[
+										449288,
+										449496
+									],
+									[
+										450032,
+										450240
+									],
+									[
+										450776,
+										450984
+									],
+									[
+										451520,
+										451728
+									],
+									[
+										452264,
+										452472
+									],
+									[
+										453008,
+										453216
+									],
+									[
+										453752,
+										453960
+									],
+									[
+										456737,
+										456945
+									],
+									[
+										529457,
+										529655
+									],
+									[
+										531627,
+										531885
+									],
+									[
+										531885,
+										532143
+									],
+									[
+										532143,
+										532401
+									],
+									[
+										532401,
+										532659
+									],
+									[
+										534042,
+										534300
+									],
+									[
+										534300,
+										534558
+									],
+									[
+										534558,
+										534816
+									],
+									[
+										534816,
+										535074
+									],
+									[
+										638417,
+										638670
+									],
+									[
+										638670,
+										638923
+									],
+									[
+										638923,
+										639176
+									],
+									[
+										639176,
+										639423
+									],
+									[
+										639423,
+										639670
+									],
+									[
+										648710,
+										648961
+									],
+									[
+										650772,
+										651023
+									],
+									[
+										653423,
+										653650
+									],
+									[
+										913557,
+										913802
+									],
+									[
+										913802,
+										914047
+									],
+									[
+										1035283,
+										1035481
+									],
+									[
+										1039200,
+										1039435
+									],
+									[
+										1087182,
+										1087393
+									],
+									[
+										1087393,
+										1087604
+									],
+									[
+										1087604,
+										1087815
+									],
+									[
+										1101362,
+										1101584
+									],
+									[
+										1102173,
+										1102395
+									],
+									[
+										1102984,
+										1103206
+									],
+									[
+										1103795,
+										1104017
+									],
+									[
+										1104017,
+										1104228
+									],
+									[
+										1104228,
+										1104439
+									],
+									[
+										1105028,
+										1105250
+									],
+									[
+										1106221,
+										1106449
+									],
+									[
+										1107420,
+										1107648
+									],
+									[
+										1108619,
+										1108847
+									],
+									[
+										1109818,
+										1110046
+									],
+									[
+										1111017,
+										1111245
+									],
+									[
+										1112216,
+										1112444
+									],
+									[
+										1113415,
+										1113643
+									],
+									[
+										1114614,
+										1114842
+									],
+									[
+										1115813,
+										1116041
+									],
+									[
+										1117012,
+										1117240
+									],
+									[
+										1117829,
+										1118057
+									],
+									[
+										1118057,
+										1118285
+									],
+									[
+										1118285,
+										1118513
+									],
+									[
+										1119102,
+										1119330
+									],
+									[
+										1119330,
+										1119558
+									],
+									[
+										1119558,
+										1119786
+									],
+									[
+										1120375,
+										1120603
+									],
+									[
+										1120603,
+										1120831
+									],
+									[
+										1120831,
+										1121059
+									],
+									[
+										1121648,
+										1121876
+									],
+									[
+										1121876,
+										1122104
+									],
+									[
+										1122104,
+										1122332
+									],
+									[
+										1122921,
+										1123149
+									],
+									[
+										1123149,
+										1123377
+									],
+									[
+										1123377,
+										1123605
+									],
+									[
+										1124194,
+										1124422
+									],
+									[
+										1124422,
+										1124650
+									],
+									[
+										1124650,
+										1124878
+									],
+									[
+										1125467,
+										1125695
+									],
+									[
+										1125695,
+										1125923
+									],
+									[
+										1125923,
+										1126151
+									],
+									[
+										1126740,
+										1126968
+									],
+									[
+										1126968,
+										1127196
+									],
+									[
+										1127196,
+										1127424
+									],
+									[
+										1128013,
+										1128241
+									],
+									[
+										1128241,
+										1128469
+									],
+									[
+										1128469,
+										1128697
+									],
+									[
+										1129286,
+										1129514
+									],
+									[
+										1129514,
+										1129742
+									],
+									[
+										1129742,
+										1129970
+									],
+									[
+										1130559,
+										1130787
+									],
+									[
+										1130787,
+										1131015
+									],
+									[
+										1131015,
+										1131243
+									],
+									[
+										1131832,
+										1132060
+									],
+									[
+										1132060,
+										1132288
+									],
+									[
+										1132288,
+										1132516
+									],
+									[
+										1133105,
+										1133333
+									],
+									[
+										1133333,
+										1133561
+									],
+									[
+										1133561,
+										1133789
+									],
+									[
+										1134378,
+										1134606
+									],
+									[
+										1134606,
+										1134834
+									],
+									[
+										1134834,
+										1135062
+									],
+									[
+										1135651,
+										1135879
+									],
+									[
+										1135879,
+										1136107
+									],
+									[
+										1136107,
+										1136335
+									],
+									[
+										1136924,
+										1137152
+									],
+									[
+										1137152,
+										1137380
+									],
+									[
+										1137380,
+										1137608
+									],
+									[
+										1138197,
+										1138425
+									],
+									[
+										1138425,
+										1138653
+									],
+									[
+										1138653,
+										1138881
+									],
+									[
+										1139470,
+										1139698
+									],
+									[
+										1139698,
+										1139926
+									],
+									[
+										1139926,
+										1140154
+									],
+									[
+										1140743,
+										1140971
+									],
+									[
+										1140971,
+										1141199
+									],
+									[
+										1141199,
+										1141427
+									],
+									[
+										1142016,
+										1142244
+									],
+									[
+										1142244,
+										1142472
+									],
+									[
+										1142472,
+										1142700
+									],
+									[
+										1143289,
+										1143517
+									],
+									[
+										1143517,
+										1143745
+									],
+									[
+										1143745,
+										1143973
+									],
+									[
+										1144562,
+										1144790
+									],
+									[
+										1144790,
+										1145018
+									],
+									[
+										1145018,
+										1145246
+									],
+									[
+										1145835,
+										1146063
+									],
+									[
+										1146063,
+										1146291
+									],
+									[
+										1146291,
+										1146519
+									],
+									[
+										1147108,
+										1147336
+									],
+									[
+										1147336,
+										1147564
+									],
+									[
+										1147564,
+										1147792
+									],
+									[
+										1148381,
+										1148609
+									],
+									[
+										1148609,
+										1148837
+									],
+									[
+										1148837,
+										1149065
+									],
+									[
+										1149654,
+										1149882
+									],
+									[
+										1149882,
+										1150110
+									],
+									[
+										1150110,
+										1150338
+									],
+									[
+										1150927,
+										1151155
+									],
+									[
+										1151155,
+										1151383
+									],
+									[
+										1151383,
+										1151611
+									],
+									[
+										1152200,
+										1152428
+									],
+									[
+										1152428,
+										1152656
+									],
+									[
+										1152656,
+										1152884
+									],
+									[
+										1153473,
+										1153701
+									],
+									[
+										1153701,
+										1153929
+									],
+									[
+										1153929,
+										1154157
+									],
+									[
+										1154746,
+										1154974
+									],
+									[
+										1154974,
+										1155202
+									],
+									[
+										1155202,
+										1155430
+									],
+									[
+										1156019,
+										1156247
+									],
+									[
+										1156247,
+										1156475
+									],
+									[
+										1156475,
+										1156703
+									],
+									[
+										1157292,
+										1157520
+									],
+									[
+										1157520,
+										1157748
+									],
+									[
+										1157748,
+										1157976
+									],
+									[
+										1158565,
+										1158793
+									],
+									[
+										1158793,
+										1159021
+									],
+									[
+										1159021,
+										1159249
+									],
+									[
+										1159838,
+										1160066
+									],
+									[
+										1160066,
+										1160294
+									],
+									[
+										1160294,
+										1160522
+									],
+									[
+										1161111,
+										1161339
+									],
+									[
+										1161339,
+										1161567
+									],
+									[
+										1161567,
+										1161795
+									],
+									[
+										1162384,
+										1162612
+									],
+									[
+										1162612,
+										1162840
+									],
+									[
+										1162840,
+										1163068
+									],
+									[
+										1163657,
+										1163885
+									],
+									[
+										1163885,
+										1164113
+									],
+									[
+										1164113,
+										1164341
+									],
+									[
+										1164930,
+										1165158
+									],
+									[
+										1165158,
+										1165386
+									],
+									[
+										1165386,
+										1165614
+									],
+									[
+										1288002,
+										1288220
+									],
+									[
+										1288220,
+										1288438
+									],
+									[
+										1288438,
+										1288656
+									],
+									[
+										1288656,
+										1288874
+									],
+									[
+										1288874,
+										1289092
+									],
+									[
+										1289092,
+										1289310
+									],
+									[
+										1289310,
+										1289528
+									],
+									[
+										1289528,
+										1289746
+									],
+									[
+										1289746,
+										1289964
+									],
+									[
+										1289964,
+										1290182
+									],
+									[
+										1290182,
+										1290400
+									],
+									[
+										1290400,
+										1290618
+									],
+									[
+										1290618,
+										1290836
+									],
+									[
+										1290836,
+										1291054
+									],
+									[
+										1291054,
+										1291272
+									],
+									[
+										1291272,
+										1291490
+									],
+									[
+										1291490,
+										1291708
+									],
+									[
+										1291708,
+										1291926
+									],
+									[
+										1291926,
+										1292144
+									],
+									[
+										1292144,
+										1292362
+									],
+									[
+										1292362,
+										1292580
+									],
+									[
+										1292580,
+										1292798
+									],
+									[
+										1292798,
+										1293016
+									],
+									[
+										1293016,
+										1293234
+									],
+									[
+										1293234,
+										1293452
+									],
+									[
+										1293452,
+										1293670
+									],
+									[
+										1293670,
+										1293888
+									],
+									[
+										1293888,
+										1294106
+									]
+								],
+								"scope": "bookmarks"
+							},
 							"error":
 							{
 								"flags": 144,
@@ -1122,6 +2327,206 @@
 									[
 										456737,
 										456945
+									],
+									[
+										529457,
+										529655
+									],
+									[
+										638417,
+										638670
+									],
+									[
+										638670,
+										638923
+									],
+									[
+										638923,
+										639176
+									],
+									[
+										639176,
+										639423
+									],
+									[
+										639423,
+										639670
+									],
+									[
+										648710,
+										648961
+									],
+									[
+										650772,
+										651023
+									],
+									[
+										653423,
+										653650
+									],
+									[
+										913557,
+										913802
+									],
+									[
+										913802,
+										914047
+									],
+									[
+										1035283,
+										1035481
+									],
+									[
+										1087182,
+										1087393
+									],
+									[
+										1087393,
+										1087604
+									],
+									[
+										1087604,
+										1087815
+									],
+									[
+										1101362,
+										1101584
+									],
+									[
+										1102173,
+										1102395
+									],
+									[
+										1102984,
+										1103206
+									],
+									[
+										1103795,
+										1104017
+									],
+									[
+										1104017,
+										1104228
+									],
+									[
+										1104228,
+										1104439
+									],
+									[
+										1105028,
+										1105250
+									],
+									[
+										1288002,
+										1288220
+									],
+									[
+										1288220,
+										1288438
+									],
+									[
+										1288438,
+										1288656
+									],
+									[
+										1288656,
+										1288874
+									],
+									[
+										1288874,
+										1289092
+									],
+									[
+										1289092,
+										1289310
+									],
+									[
+										1289310,
+										1289528
+									],
+									[
+										1289528,
+										1289746
+									],
+									[
+										1289746,
+										1289964
+									],
+									[
+										1289964,
+										1290182
+									],
+									[
+										1290182,
+										1290400
+									],
+									[
+										1290400,
+										1290618
+									],
+									[
+										1290618,
+										1290836
+									],
+									[
+										1290836,
+										1291054
+									],
+									[
+										1291054,
+										1291272
+									],
+									[
+										1291272,
+										1291490
+									],
+									[
+										1291490,
+										1291708
+									],
+									[
+										1291708,
+										1291926
+									],
+									[
+										1291926,
+										1292144
+									],
+									[
+										1292144,
+										1292362
+									],
+									[
+										1292362,
+										1292580
+									],
+									[
+										1292580,
+										1292798
+									],
+									[
+										1292798,
+										1293016
+									],
+									[
+										1293016,
+										1293234
+									],
+									[
+										1293234,
+										1293452
+									],
+									[
+										1293452,
+										1293670
+									],
+									[
+										1293670,
+										1293888
+									],
+									[
+										1293888,
+										1294106
 									]
 								],
 								"scope": "bookmark"
@@ -1275,6 +2680,538 @@
 									[
 										383142,
 										383298
+									],
+									[
+										531627,
+										531885
+									],
+									[
+										531885,
+										532143
+									],
+									[
+										532143,
+										532401
+									],
+									[
+										532401,
+										532659
+									],
+									[
+										534042,
+										534300
+									],
+									[
+										534300,
+										534558
+									],
+									[
+										534558,
+										534816
+									],
+									[
+										534816,
+										535074
+									],
+									[
+										1039200,
+										1039435
+									],
+									[
+										1106221,
+										1106449
+									],
+									[
+										1107420,
+										1107648
+									],
+									[
+										1108619,
+										1108847
+									],
+									[
+										1109818,
+										1110046
+									],
+									[
+										1111017,
+										1111245
+									],
+									[
+										1112216,
+										1112444
+									],
+									[
+										1113415,
+										1113643
+									],
+									[
+										1114614,
+										1114842
+									],
+									[
+										1115813,
+										1116041
+									],
+									[
+										1117012,
+										1117240
+									],
+									[
+										1117829,
+										1118057
+									],
+									[
+										1118057,
+										1118285
+									],
+									[
+										1118285,
+										1118513
+									],
+									[
+										1119102,
+										1119330
+									],
+									[
+										1119330,
+										1119558
+									],
+									[
+										1119558,
+										1119786
+									],
+									[
+										1120375,
+										1120603
+									],
+									[
+										1120603,
+										1120831
+									],
+									[
+										1120831,
+										1121059
+									],
+									[
+										1121648,
+										1121876
+									],
+									[
+										1121876,
+										1122104
+									],
+									[
+										1122104,
+										1122332
+									],
+									[
+										1122921,
+										1123149
+									],
+									[
+										1123149,
+										1123377
+									],
+									[
+										1123377,
+										1123605
+									],
+									[
+										1124194,
+										1124422
+									],
+									[
+										1124422,
+										1124650
+									],
+									[
+										1124650,
+										1124878
+									],
+									[
+										1125467,
+										1125695
+									],
+									[
+										1125695,
+										1125923
+									],
+									[
+										1125923,
+										1126151
+									],
+									[
+										1126740,
+										1126968
+									],
+									[
+										1126968,
+										1127196
+									],
+									[
+										1127196,
+										1127424
+									],
+									[
+										1128013,
+										1128241
+									],
+									[
+										1128241,
+										1128469
+									],
+									[
+										1128469,
+										1128697
+									],
+									[
+										1129286,
+										1129514
+									],
+									[
+										1129514,
+										1129742
+									],
+									[
+										1129742,
+										1129970
+									],
+									[
+										1130559,
+										1130787
+									],
+									[
+										1130787,
+										1131015
+									],
+									[
+										1131015,
+										1131243
+									],
+									[
+										1131832,
+										1132060
+									],
+									[
+										1132060,
+										1132288
+									],
+									[
+										1132288,
+										1132516
+									],
+									[
+										1133105,
+										1133333
+									],
+									[
+										1133333,
+										1133561
+									],
+									[
+										1133561,
+										1133789
+									],
+									[
+										1134378,
+										1134606
+									],
+									[
+										1134606,
+										1134834
+									],
+									[
+										1134834,
+										1135062
+									],
+									[
+										1135651,
+										1135879
+									],
+									[
+										1135879,
+										1136107
+									],
+									[
+										1136107,
+										1136335
+									],
+									[
+										1136924,
+										1137152
+									],
+									[
+										1137152,
+										1137380
+									],
+									[
+										1137380,
+										1137608
+									],
+									[
+										1138197,
+										1138425
+									],
+									[
+										1138425,
+										1138653
+									],
+									[
+										1138653,
+										1138881
+									],
+									[
+										1139470,
+										1139698
+									],
+									[
+										1139698,
+										1139926
+									],
+									[
+										1139926,
+										1140154
+									],
+									[
+										1140743,
+										1140971
+									],
+									[
+										1140971,
+										1141199
+									],
+									[
+										1141199,
+										1141427
+									],
+									[
+										1142016,
+										1142244
+									],
+									[
+										1142244,
+										1142472
+									],
+									[
+										1142472,
+										1142700
+									],
+									[
+										1143289,
+										1143517
+									],
+									[
+										1143517,
+										1143745
+									],
+									[
+										1143745,
+										1143973
+									],
+									[
+										1144562,
+										1144790
+									],
+									[
+										1144790,
+										1145018
+									],
+									[
+										1145018,
+										1145246
+									],
+									[
+										1145835,
+										1146063
+									],
+									[
+										1146063,
+										1146291
+									],
+									[
+										1146291,
+										1146519
+									],
+									[
+										1147108,
+										1147336
+									],
+									[
+										1147336,
+										1147564
+									],
+									[
+										1147564,
+										1147792
+									],
+									[
+										1148381,
+										1148609
+									],
+									[
+										1148609,
+										1148837
+									],
+									[
+										1148837,
+										1149065
+									],
+									[
+										1149654,
+										1149882
+									],
+									[
+										1149882,
+										1150110
+									],
+									[
+										1150110,
+										1150338
+									],
+									[
+										1150927,
+										1151155
+									],
+									[
+										1151155,
+										1151383
+									],
+									[
+										1151383,
+										1151611
+									],
+									[
+										1152200,
+										1152428
+									],
+									[
+										1152428,
+										1152656
+									],
+									[
+										1152656,
+										1152884
+									],
+									[
+										1153473,
+										1153701
+									],
+									[
+										1153701,
+										1153929
+									],
+									[
+										1153929,
+										1154157
+									],
+									[
+										1154746,
+										1154974
+									],
+									[
+										1154974,
+										1155202
+									],
+									[
+										1155202,
+										1155430
+									],
+									[
+										1156019,
+										1156247
+									],
+									[
+										1156247,
+										1156475
+									],
+									[
+										1156475,
+										1156703
+									],
+									[
+										1157292,
+										1157520
+									],
+									[
+										1157520,
+										1157748
+									],
+									[
+										1157748,
+										1157976
+									],
+									[
+										1158565,
+										1158793
+									],
+									[
+										1158793,
+										1159021
+									],
+									[
+										1159021,
+										1159249
+									],
+									[
+										1159838,
+										1160066
+									],
+									[
+										1160066,
+										1160294
+									],
+									[
+										1160294,
+										1160522
+									],
+									[
+										1161111,
+										1161339
+									],
+									[
+										1161339,
+										1161567
+									],
+									[
+										1161567,
+										1161795
+									],
+									[
+										1162384,
+										1162612
+									],
+									[
+										1162612,
+										1162840
+									],
+									[
+										1162840,
+										1163068
+									],
+									[
+										1163657,
+										1163885
+									],
+									[
+										1163885,
+										1164113
+									],
+									[
+										1164113,
+										1164341
+									],
+									[
+										1164930,
+										1165158
+									],
+									[
+										1165158,
+										1165386
+									],
+									[
+										1165386,
+										1165614
 									]
 								],
 								"scope": "bookmark"
@@ -1296,99 +3233,11 @@
 							"need_to_save": false,
 							"resfr_wa": true,
 							"result_file_regex": "[\"']?([\\w\\d\\:\\\\\\/\\.\\-\\=]+\\.\\w+[\\w\\d]*)[\"']?\\s*[,:on line\\(]{1,9}\\s*(\\d+)\\)?",
-							"syntax": "Packages/Log Highlight/Log Highlight.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 721,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								578,
-								578
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "public/js/src/landing_culturapopular-public.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1758,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1074,
-								1074
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 225.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5661,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								792,
-								792
-							]
-						],
-						"settings":
-						{
-							"auto_indent": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
+							"syntax": "Packages/Log Highlight/Log Highlight.tmLanguage",
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2445.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
@@ -1450,16 +3299,116 @@
 		"selected_items":
 		[
 			[
+				"admin",
+				"public/wp-content/plugins/landing_culturapopular/admin/class-landing_culturapopular-admin.php"
+			],
+			[
+				"deb",
+				"public/wp-content/debug.log"
+			],
+			[
+				"publi",
+				"public/wp-content/plugins/landing_culturapopular/public/class-landing_culturapopular-public.php"
+			],
+			[
+				"jspul",
+				"public/wp-content/plugins/landing_culturapopular/public/js/src/landing_culturapopular-public.js"
+			],
+			[
+				"formul",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/component-formulario.php"
+			],
+			[
+				"publics",
+				"public/wp-content/plugins/landing_culturapopular/public/css/src/landing_culturapopular-public.scss"
+			],
+			[
+				"compont",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/component-formulario.php"
+			],
+			[
+				"section-lan",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/section-landing.php"
+			],
+			[
+				"deb u",
+				"public/wp-content/debug.log"
+			],
+			[
+				"class",
+				"public/wp-content/plugins/landing_culturapopular/includes/class-landing_culturapopular.php"
+			],
+			[
+				"public-dis",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/landing_culturapopular-public-display.php"
+			],
+			[
+				"public",
+				"public/wp-content/plugins/landing_culturapopular/public/class-landing_culturapopular-public.php"
+			],
+			[
+				"",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/landing_culturapopular-public-display.php"
+			],
+			[
+				"debug.l",
+				"public/wp-content/debug.log"
+			],
+			[
+				"form",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/component-formulario.php"
+			],
+			[
+				"publicjs",
+				"public/wp-content/plugins/landing_culturapopular/public/js/src/landing_culturapopular-public.js"
+			],
+			[
+				"publicj",
+				"public/wp-content/plugins/landing_culturapopular/public/js/src/landing_culturapopular-public.js"
+			],
+			[
+				"navwa",
+				"public/wp-content/plugins/landing_culturapopular/vendor/class-wp-bootstrap-navwalker.php"
+			],
+			[
+				"navb",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/navbar.php"
+			],
+			[
+				"section",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/section-landing.php"
+			],
+			[
+				"head",
+				"public/wp-content/themes/culturapopular/header.php"
+			],
+			[
+				"gulp",
+				"public/wp-content/plugins/landing_culturapopular/gulpfile.js"
+			],
+			[
+				"landing-css",
+				"public/wp-content/plugins/landing_culturapopular/public/css/src/landing_culturapopular-public.scss"
+			],
+			[
+				"public-di",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/landing_culturapopular-public-display.php"
+			],
+			[
+				"debug",
+				"public/wp-content/debug.log"
+			],
+			[
+				"formu",
+				"public/wp-content/plugins/landing_culturapopular/public/partials/section-formulario.php"
+			],
+			[
 				"public-d",
 				"public/wp-content/plugins/landing_culturapopular/public/partials/landing_culturapopular-public-display.php"
 			],
 			[
 				"sect",
 				"public/wp-content/plugins/landing_culturapopular/public/partials/section-formulario.php"
-			],
-			[
-				"publi",
-				"public/wp-content/plugins/landing_culturapopular/public/class-landing_culturapopular-public.php"
 			],
 			[
 				"overr",
@@ -1482,52 +3431,16 @@
 				"public/wp-content/plugins/landing_culturapopular/gulpfile.js"
 			],
 			[
-				"debug",
-				"public/wp-content/debug.log"
-			],
-			[
 				"landingjs",
 				"public/wp-content/plugins/landing_culturapopular/public/js/src/landing_culturapopular-public.js"
-			],
-			[
-				"formul",
-				"public/wp-content/plugins/landing_culturapopular/public/partials/section-formulario.php"
-			],
-			[
-				"admin",
-				"public/wp-content/plugins/landing_culturapopular/admin/class-landing_culturapopular-admin.php"
-			],
-			[
-				"public",
-				"public/wp-content/plugins/landing_culturapopular/public/partials/landing_culturapopular-public-display.php"
-			],
-			[
-				"public-di",
-				"public/wp-content/plugins/landing_culturapopular/public/partials/landing_culturapopular-public-display.php"
 			],
 			[
 				"debu",
 				"public/wp-content/debug.log"
 			],
 			[
-				"class",
-				"public/wp-content/plugins/landing_culturapopular/includes/class-landing_culturapopular.php"
-			],
-			[
-				"gulp",
-				"public/wp-content/plugins/landing_culturapopular/gulpfile.js"
-			],
-			[
-				"navb",
-				"public/wp-content/plugins/landing_culturapopular/public/partials/navbar.php"
-			],
-			[
 				"nav",
 				"public/wp-content/plugins/landing_culturapopular/public/partials/navbar.php"
-			],
-			[
-				"formu",
-				"public/wp-content/plugins/landing_culturapopular/public/partials/section-formulario.php"
 			],
 			[
 				"func",
@@ -1566,10 +3479,6 @@
 				"landing_culturapopular/includes/class-landing_culturapopular-activator.php"
 			],
 			[
-				"form",
-				"landing_culturapopular/public/partials/section-formulario.php"
-			],
-			[
 				"publid",
 				"landing_culturapopular/public/partials/landing_culturapopular-public-display.php"
 			],
@@ -1596,10 +3505,6 @@
 			[
 				"un",
 				"untitled"
-			],
-			[
-				"",
-				"filsa2018-frontend/src/components/SingleNoticiaAlt.js"
 			],
 			[
 				"singleno",
@@ -1822,10 +3727,6 @@
 				"filsa2018-frontend/src/components/MenuRedes.js"
 			],
 			[
-				"head",
-				"filsa2018-frontend/src/components/Header.js"
-			],
-			[
 				"mini",
 				"filsa2018-frontend/src/components/BuscaLibrosMini.js"
 			],
@@ -1908,58 +3809,6 @@
 			[
 				"in",
 				"filsa2018-frontend/public/index.html"
-			],
-			[
-				"dias",
-				"filsa2018-frontend/src/components/Dias.js"
-			],
-			[
-				"day",
-				"filsa2018-frontend/src/components/Day.js"
-			],
-			[
-				"events",
-				"filsa2018-frontend/src/components/EventSingle.js"
-			],
-			[
-				"pro",
-				"filsa2018-frontend/src/components/Programa.js"
-			],
-			[
-				"colab",
-				"filsa2018-frontend/src/components/Colaboradores.js"
-			],
-			[
-				"regisv",
-				"filsa2018-frontend/src/registerServiceWorker.js"
-			],
-			[
-				"registe",
-				"filsa2018-semantic-ui-theme/tasks/admin/register.js"
-			],
-			[
-				"admi",
-				"filsa2018/admin/class-filsa2018-admin.php"
-			],
-			[
-				"pu",
-				"filsa2018/public/class-filsa2018-public.php"
-			],
-			[
-				"mobil",
-				"filsa2018-frontend/src/components/MobileMenuItems.js"
-			],
-			[
-				"menuit",
-				"filsa2018-frontend/src/components/menuItems.js"
-			],
-			[
-				"fastli",
-				"filsa2018-frontend/src/components/FastLinks.js"
-			],
-			[
-				"invitad",
-				"filsa2018-frontend/src/components/Invitado.js"
 			]
 		],
 		"width": 0.0
@@ -1967,9 +3816,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "scs",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Documentos/code/php/csd/csd_web_mailhog/public/wp-content/themes/universe_theme/csdweb.sublime-project"
+			],
+			[
+				"csd",
+				"~/Documentos/code/php/csd/csd_web_mailhog/public/wp-content/themes/universe_theme/csdweb.sublime-project"
+			],
 			[
 				"scs",
 				"~/Documentos/code/php/csd/csd_web_mailhog/public/wp-content/themes/universe_theme/csdweb.sublime-project"
@@ -1981,14 +3838,6 @@
 			[
 				"aur",
 				"~/Documentos/code/projects/aura_austral.sublime-project"
-			],
-			[
-				"",
-				"~/Documentos/code/php/csd/csd_web_mailhog/public/wp-content/themes/universe_theme/csdweb.sublime-project"
-			],
-			[
-				"csd",
-				"~/Documentos/code/php/csd/csd_web_mailhog/public/wp-content/themes/universe_theme/csdweb.sublime-project"
 			],
 			[
 				"cs",
@@ -2053,7 +3902,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 339.0,
 	"status_bar_visible": true,
 	"template_settings":

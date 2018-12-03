@@ -100,6 +100,75 @@ class Landing_culturapopular_Admin {
 
 	}
 
+	public static function get_propuestas() {
+		global $wpdb;
+
+		$tbname = $wpdb->prefix . 'landing';
+
+		$consultas = $wpdb->get_results("SELECT * FROM $tbname");
+		return $consultas;
+	}
+
+	public function consultas_admin() {
+		//$this->plugin_screen_hook_suffix = add_options_page( 'Propuestas enviadas', 'Propuestas Enviadas', 'manage_options', $this->plugin_name, array($this, 'fpost_doadminpropuestas'));
+		$this->plugin_screen_hoook_suffix = add_submenu_page( 'edit.php?post_type=landing', 'Propuestas Enviadas', 'Propuestas Enviadas', 'manage_options', $this->plugin_name, array($this, 'fpost_doadminpropuestas') );
+	}
+
+	public function fpost_doadminpropuestas() {
+	if (!current_user_can('manage_options'))  {
+		wp_die( __('No tienes permisos suficientes para ver esta página.') );
+	}
+	global $wpdb;
+	//Llamando a los inscritos
+	$propuestas = Landing_culturapopular_Admin::get_propuestas();
+	?>
+	<div class="wrap">
+		<h2>propuestas</h2>
+		<table class="widefat wp-list-table fspmlist">
+			<thead>
+				<th>ID</th>
+				<th>Fecha</th>
+				<th>Hora</th>
+				<th>Nombre</th>
+				<th>E-Mail</th>
+				<th>Institución</th>
+				<th>País</th>
+				<th>Tipo propuesta</th>
+				<th>Ejes</th>
+				<th>Título Propuesta</th>
+				<th>Propuesta</th>
+				<th>Idioma</th>
+			</thead>
+		
+		<?php
+			foreach($propuestas as $key=>$propuesta) {
+				$datos = unserialize($propuesta->data);
+				?>
+				<?php if($key %2 == 0):?>
+					<tr class="alternate">
+				<?php else:?>
+					<tr>
+				<?php endif;?>
+					<td><?php echo $propuesta->id;?></td>
+					<td><?php echo mysql2date( 'l, j \d\e F, Y ', $propuesta->time );?></td>
+					<td><?php echo mysql2date( 'H:i,s', $propuesta->time );?></td>
+					<td><?php echo $datos['nombre'];?></td>
+					<td><?php echo $datos['email'];?></td>
+					<td><?php echo $datos['institucion'];?></td>
+					<td><?php echo $datos['pais'];?></td>
+					<td><?php echo $datos['tipo_propuesta'];?></td>
+					<td><?php echo $datos['eje'];?></td>
+					<td><?php echo $datos['titulo_ponencia'];?></td>
+					<td><?php echo $datos['resumen'];?></td>
+					<td><?php echo $datos['language'];?></td>
+				</tr>
+			<?php }
+		?>
+		</table>
+	</div>
+	<?php
+}
+
 	public function cmb_show_on_meta_value( $display, $meta_box ) {
 		if ( ! isset( $meta_box['show_on']['meta_key'] ) ) {
 			return $display;

@@ -177,8 +177,7 @@ class Landing_culturapopular_Public {
 		$sanedata['nombre'] = sanitize_text_field( $data['nombre'] );
 		$sanedata['institucion'] = sanitize_text_field( $data['institucion'] );
 		$sanedata['pais'] = sanitize_text_field( $data['pais'] );
-		$sanedata['tipo'] = sanitize_text_field( $data['tipo'] );
-		$sanedata['eje'] = sanitize_text_field( $data['eje'] );
+		$sanedata['eje'] = sanitize_text_field( implode(', ', $data['eje']) );
 		$sanedata['tipo_propuesta'] = sanitize_text_field( $data['tipo_propuesta'] );
 		$sanedata['titulo_ponencia'] = sanitize_text_field( $data['titulo_ponencia'] );
 		$sanedata['resumen'] = sanitize_text_field( $data['resumen'] );
@@ -253,15 +252,16 @@ class Landing_culturapopular_Public {
 		$lang = $data['language'];
 		$options = get_option( 'cp_page_options' );
 		$correos = $options['cpl_correos'];
-		$message = '<div style="font-size: sans-serif;">';
-			$message .= '<p>Nombre:' . $data['nombre'] . '</p>';
-			$message .= '<p>Email:' . $data['email'] . '</p>';
-			$message .= '<p>Institución:' . $data['institucion'] . '</p>';
-			$message .= '<p>País:' . $data['pais'] . '</p>';
-			$message .= '<p>Tipo de propuesta:' . $data['tipo_propuesta'] . '</p>';
-			$message .= '<p>Eje temático:' . $data['eje'] . '</p>';
-			$message .= '<p>Título ponencia:' . $data['titulo_ponencia'] . '</p>';
-			$message .= '<p>Resumen:' . $data['resumen'] . '</p>';
+		$message = '<div style="font-family: sans-serif;">';
+			$message .= '<h1>Recepción de propuesta para Representaciones y proyectos políticos en las culturas populares latinoamericanas hoy</h1>';
+			$message .= '<p><strong>Nombre:</strong> ' . $data['nombre'] . '</p>';
+			$message .= '<p><strong>Email:</strong> ' . $data['email'] . '</p>';
+			$message .= '<p><strong>Institución:</strong> ' . $data['institucion'] . '</p>';
+			$message .= '<p><strong>País:</strong>' . $data['pais'] . '</p>';
+			$message .= '<p><strong>Tipo de propuesta:</strong> ' . $data['tipo_propuesta'] . '</p>';
+			$message .= '<p><strong>Eje(s) temático(s):</strong> ' . $data['eje'] . '</p>';
+			$message .= '<p><strong>Título ponencia:</strong> ' . $data['titulo_ponencia'] . '</p>';
+			$message .= '<p><strong>Resumen: </strong>' . $data['resumen'] . '</p>';
 		$message .= '</div>';
 		
 		add_filter('wp_mail_content_type', 'Landing_culturapopular_Public::set_html_content_type' );

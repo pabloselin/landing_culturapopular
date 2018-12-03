@@ -37,14 +37,21 @@
 		var message = $(".message-section");
 		form.on("submit", function(event) {
 			event.preventDefault();
+			var ejes = []
+			var eje = $('select[name="eje[]"] option:selected', this).map(function(i, el) {
+				ejes.push($(el).val());
+			});
+
+			console.log(ejes);
+
 			var data = {
 				action: "ajax_submit_form",
 				nombre: $('input[name="nombre"]', this).val(),
 				email: $('input[name="email"]', this).val(),
 				institucion: $('input[name="institucion"]', this).val(),
-				pais: $('select[name="pais"]', this).val(),
-				tipo: $('input[name="tipo_propuesta"]', this).val(),
-				eje: $('input[name="eje"]', this).val(),
+				pais: $('select[name="pais"] option:selected', this).val(),
+				tipo_propuesta: $('select[name="tipo_propuesta"] option:selected', this).val(),
+				eje: ejes,
 				titulo_ponencia: $('input[name="titulo_ponencia"]', this).val(),
 				resumen: $('textarea[name="resumen"]', this).val(),
 				lang: $('input[name="lang"]', this).val(),

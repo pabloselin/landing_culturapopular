@@ -166,6 +166,7 @@ class Landing_culturapopular {
 		$this->loader->add_action( 'cmb2_admin_init', $plugin_admin, 'cp_register_landing_content_fields');
 		$this->loader->add_action( 'cmb2_admin_init', $plugin_admin, 'cp_register_optional_boxes');
 		$this->loader->add_action( 'cmb2_show_on', $plugin_admin, 'cmb_show_on_meta_value', 10, 2);
+		$this->loader->add_action( 'admin_menu', $plugin_admin, 'consultas_admin' );
 	}
 
 	/**

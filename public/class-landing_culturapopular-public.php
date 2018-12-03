@@ -265,7 +265,7 @@ class Landing_culturapopular_Public {
 		$message .= '</div>';
 		
 		add_filter('wp_mail_content_type', 'Landing_culturapopular_Public::set_html_content_type' );
-		$mail = wp_mail( $data['email'], 'Recepción de formulario', $message, $headers = '' );
+		$mail = wp_mail( $correos, 'Recepción de formulario', $message, $headers = '' );
 		remove_filter('wp_mail_content_type', 'Landing_culturapopular_Public::set_html_content_type');
 		
 		return $mail;

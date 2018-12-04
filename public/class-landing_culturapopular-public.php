@@ -253,15 +253,15 @@ class Landing_culturapopular_Public {
 		$options = get_option( 'cp_page_options' );
 		$correos = $options['cpl_correos'];
 		$message = '<div style="font-family: sans-serif;">';
-			$message .= '<h1>Recepción de propuesta para Representaciones y proyectos políticos en las culturas populares latinoamericanas hoy</h1>';
-			$message .= '<p><strong>Nombre:</strong> ' . $data['nombre'] . '</p>';
-			$message .= '<p><strong>Email:</strong> ' . $data['email'] . '</p>';
-			$message .= '<p><strong>Institución:</strong> ' . $data['institucion'] . '</p>';
-			$message .= '<p><strong>País:</strong>' . $data['pais'] . '</p>';
-			$message .= '<p><strong>Tipo de propuesta:</strong> ' . $data['tipo_propuesta'] . '</p>';
-			$message .= '<p><strong>Eje(s) temático(s):</strong> ' . $data['eje'] . '</p>';
-			$message .= '<p><strong>Título ponencia:</strong> ' . $data['titulo_ponencia'] . '</p>';
-			$message .= '<p><strong>Resumen: </strong>' . $data['resumen'] . '</p>';
+		$message .= '<h1>Recepción de propuesta para Representaciones y proyectos políticos en las culturas populares latinoamericanas hoy</h1>';
+		$message .= '<p><strong>Nombre:</strong> ' . $data['nombre'] . '</p>';
+		$message .= '<p><strong>Email:</strong> ' . $data['email'] . '</p>';
+		$message .= '<p><strong>Institución:</strong> ' . $data['institucion'] . '</p>';
+		$message .= '<p><strong>País:</strong>' . $data['pais'] . '</p>';
+		$message .= '<p><strong>Tipo de propuesta:</strong> ' . $data['tipo_propuesta'] . '</p>';
+		$message .= '<p><strong>Eje(s) temático(s):</strong> ' . $data['eje'] . '</p>';
+		$message .= '<p><strong>Título ponencia:</strong> ' . $data['titulo_ponencia'] . '</p>';
+		$message .= '<p><strong>Resumen: </strong>' . $data['resumen'] . '</p>';
 		$message .= '</div>';
 		
 		add_filter('wp_mail_content_type', 'Landing_culturapopular_Public::set_html_content_type' );
@@ -289,5 +289,20 @@ class Landing_culturapopular_Public {
 			return $title;
 		}
 		
+	}
+
+	public static function readmore($fullText, $id) {
+		$output = '';
+		if(@strpos($fullText, '<!--more-->')){
+			$morePos  = strpos($fullText, '<!--more-->');
+			$fullText = preg_replace('/<!--(.|\s)*?-->/', '', $fullText);
+			$output .= substr($fullText,0,$morePos);
+			$output .= '<div class="read-more-content hide" id="morecontent-' . $id . '">' . substr($fullText,$morePos,-1) . '</div>';
+			$output .= '<a data-id="' . $id . '" class="btn btn-lg btn-primary read-more"><i class="fa fa-plus"></i> Seguir leyendo</a>';
+		} else {
+			$output = $fullText;
+		}
+
+		return $output;
 	}
 }

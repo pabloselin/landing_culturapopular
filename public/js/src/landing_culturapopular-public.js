@@ -111,6 +111,18 @@
 					
 				}
 			});
+
+			var readmore_content
+
+			$('.read-more-content.hide').hide();
+			$('.btn.read-more').on('click', function() {
+				var readmorecontent = $('.read-more-content#morecontent-' + $(this).attr('data-id'));
+				if(readmorecontent.hasClass('hide')) {
+					readmorecontent.slideDown().removeClass('hide');
+				} else {
+					readmorecontent.slideUp().addClass('hide');
+				}
+			})
 		});
 	});
 })(jQuery);

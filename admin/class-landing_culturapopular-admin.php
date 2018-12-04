@@ -460,10 +460,17 @@ public function cp_register_options_submenu_for_landing_post_type() {
 		'type'    => 'text',
 	) );
 
+		$cmb->add_field( array(
+		'name'    => esc_html__( 'Subtítulo Español', 'cmb2' ),
+		'desc'    => esc_html__( 'Texto para el subtítulo de cabecera en español.', 'cmb2' ),
+		'id'      => 'cpl_subtitle_es',
+		'type'    => 'text',
+	) );
+
 	$cmb->add_field( array(
-		'name'    => esc_html__( 'Título Portugués', 'cmb2' ),
-		'desc'    => esc_html__( 'Texto para el título de cabecera en portugués.', 'cmb2' ),
-		'id'      => 'cpl_title_pt',
+		'name'    => esc_html__( 'Subtítulo Portugués', 'cmb2' ),
+		'desc'    => esc_html__( 'Texto para el subtítulo de cabecera en portugués.', 'cmb2' ),
+		'id'      => 'cpl_subtitle_pt',
 		'type'    => 'text',
 	) );
 
@@ -561,7 +568,8 @@ public function cp_register_landing_content_fields() {
 			'documentos' 	=> 'Documentos',
 			'formulario' 	=> 'Formulario',
 			'avisos'	 	=> 'Avisos',
-			'calendario'    => 'Calendario'
+			'calendario'    => 'Calendario',
+			'ejes'			=> 'Ejes temáticos'
 		)
 	) );
 }
@@ -611,7 +619,13 @@ public function cp_register_optional_boxes() {
 
 	$optbox->add_group_field($invitados, array(
 		'name'  => 'Texto invitado',
-		'id'	=> 'bio_invitado',
+		'id'	=> 'bio_invitado_es',
+		'type'	=> 'wysiwyg'
+	));
+
+	$optbox->add_group_field($invitados, array(
+		'name'  => 'Texto invitado portugués',
+		'id'	=> 'bio_invitado_pt',
 		'type'	=> 'wysiwyg'
 	));
 
@@ -620,6 +634,67 @@ public function cp_register_optional_boxes() {
 		'id'   => 'foto_invitado',
 		'type' => 'file'
 	));
+
+
+	$ejesbox = new_cmb2_box( array(
+		'id'           => 'cp_fields_landing_extracontent_ejes',
+		'title'        => esc_html__( 'Información ejes temáticos', 'cmb2' ),
+		'object_types' => array( 'landing' ),
+		'show_on'	   => array( 'meta_key' => 'cp_content_function', 'meta_value' => 'ejes')
+		/*
+		 * The following parameters are specific to the options-page box
+		 * Several of these parameters are passed along to add_menu_page()/add_submenu_page().
+		 */
+
+		//'option_key'      => 'cp_page_options', // The option key and admin menu page slug.
+		// 'icon_url'        => '', // Menu icon. Only applicable if 'parent_slug' is left empty.
+		// 'menu_title'      => esc_html__( 'Options', 'cmb2' ), // Falls back to 'title' (above).
+		//'parent_slug'     => 'edit.php?post_type=landing', // Make options page a submenu item of the themes menu.
+		// 'capability'      => 'manage_options', // Cap required to view options-page.
+		// 'position'        => 1, // Menu position. Only applicable if 'parent_slug' is left empty.
+		// 'admin_menu_hook' => 'network_admin_menu', // 'network_admin_menu' to add network-level options page.
+		// 'display_cb'      => false, // Override the options-page form output (CMB2_Hookup::options_page_output()).
+		// 'save_button'     => esc_html__( 'Save Theme Options', 'cmb2' ), // The text for the options-page save button. Defaults to 'Save'.
+		// 'disable_settings_errors' => true, // On settings pages (not options-general.php sub-pages), allows disabling.
+		// 'message_cb'      => 'cp_options_page_message_callback',
+	) );
+
+	$ejes = $ejesbox->add_field( array(
+		'id'   => 'group_fields_ejes',
+		'name' => 'Eje temático',
+		'type' => 'group',
+		'description' => 'Contenido eje temático',
+		'options'     => array(
+			'group_title'   => __( 'Eje {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+			'add_button'    => __( 'Añadir otro eje temático', 'cmb2' ),
+			'remove_button' => __( 'Quitar eje temático', 'cmb2' ),
+			'sortable'      => true, // beta
+	)
+	));
+
+	$ejesbox->add_group_field($ejes, array(
+		'name' 	=> 'Título eje español',
+		'id'	=> 'titulo_eje_es',
+		'type'  => 'text'
+	));
+
+	$ejesbox->add_group_field($ejes, array(
+		'name' 	=> 'Descripción eje español',
+		'id'	=> 'desc_eje_es',
+		'type'  => 'wysiwyg'
+	));
+
+	$ejesbox->add_group_field($ejes, array(
+		'name' 	=> 'Título eje portugués',
+		'id'	=> 'titulo_eje_pt',
+		'type'  => 'text'
+	));
+
+	$ejesbox->add_group_field($ejes, array(
+		'name' 	=> 'Descripción eje portugués',
+		'id'	=> 'desc_eje_pt',
+		'type'  => 'wysiwyg'
+	));	
 }
 
 }

@@ -1,4 +1,5 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "animate";
 
 $naranjo: #e06f1a;
 
@@ -9,7 +10,6 @@ h1, h2, h3, h4 {
 
 body {
   font-family: 'Roboto Slab', sans-serif;
-  color: #333;
 }
 
 .landing-presentation {
@@ -31,7 +31,7 @@ body {
   .row {
     padding-top: 32px;
     h1.display-4 {
-      font-size: 3rem;
+      font-size: 2.6rem;
       font-weight: 700;
       color: lighten($naranjo, 30%);
     }
@@ -43,21 +43,42 @@ body {
       margin: 0 auto;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-weight: 400;
+      font-size: 1.4rem;
+      text-align:center;
+    }
+  }
 }
 
 .section-landing {
   padding-bottom: 24px;
 }
 
+.the-content-section {
+  color: #333;
+}
+
 .section-landing-title {
-    text-align: center;
-    border-bottom: 1px solid $naranjo;
+    text-align: left;
+    background-color: #000;
     padding-bottom: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 36px;
     margin-top: 24px;
+    margin-left: -24px;
+    padding: 6px 12px;
+    display: inline-block;
     text-transform: uppercase;
-    font-size: 400;
+    font-weight: 700;
+    font-size: 2.2rem;
     color: $naranjo;
+    transform: rotate(-5deg);
+    @media screen and (max-width: 768px) {
+      font-size: 1.3rem;
+      margin-left: 0;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -73,5 +94,35 @@ body {
           text-align: center;
         }
       }
+    }
+  }
+
+  // Secciones especificas
+
+  .ejes-tematicos {
+    h5 {
+      color: #333;
+      font-weight: 700;
+      font-size: 1.2rem;
+      word-break: break-all;
+      max-width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  #presentacion {
+    .the-content-section {
+      font-size: 1.3rem;
+
+      .read-more-content {
+        font-size: 1.1rem;
+      }
+    }
+
+    .btn.read-more {
+      color: white;
+      display: block;
+      margin: 0 auto;
+      max-width: 200px;
     }
   }

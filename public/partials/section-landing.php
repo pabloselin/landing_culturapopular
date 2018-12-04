@@ -3,8 +3,11 @@
 			<div class="row justify-content-center">
 			<div class="col">
 				<h2 class="section-landing-title"><?php echo $title;?></h2>
-				<?php echo apply_filters( 'the_content', $content );?>
-
+				<div class="the-content-section">
+				<?php echo Landing_culturapopular_Public::readmore(apply_filters('the_content', $content), $item->ID);?>
+				<?php //echo apply_filters( 'the_content', $content );?>
+				</div>
+				
 				<?php $component = get_post_meta($item->ID, 'cp_content_function', true);
 
 					if(isset($component)) {

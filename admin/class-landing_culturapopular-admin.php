@@ -572,6 +572,18 @@ public function cp_register_landing_content_fields() {
 			'ejes'			=> 'Ejes temáticos'
 		)
 	) );
+
+	$cmb_content->add_field( array(
+		'name' 	=> esc_html__( 'Tipo de sección', 'cmb2' ),
+		'id'  	=> 'cp_content_type',
+		'type'	=> 'radio_inline',
+		'show_option_none' => true,
+		'options' => array(
+			'principal' 	=> 'Principal',
+			'sub' 			=> 'Sub sección'
+		),
+		'default' => 'sub'
+	) );
 }
 
 public function cp_register_optional_boxes() {

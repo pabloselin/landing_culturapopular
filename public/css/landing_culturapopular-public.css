@@ -8905,6 +8905,13 @@ h1, h2, h3, h4 {
 body {
   font-family: 'Roboto Slab', sans-serif; }
 
+.admin-bar .sticky-top {
+  top: 32px; }
+
+.navbar .navbar-brand img {
+  max-width: 36px;
+  height: auto; }
+
 .landing-presentation {
   background-repeat: no-repeat;
   background-size: cover;
@@ -8941,7 +8948,7 @@ body {
 .the-content-section {
   color: #333; }
 
-.section-landing-title {
+.section-landing-title.principal {
   text-align: left;
   background-color: #000;
   padding-bottom: 24px;
@@ -8956,9 +8963,20 @@ body {
   color: #e06f1a;
   transform: rotate(-5deg); }
   @media screen and (max-width: 768px) {
-    .section-landing-title {
+    .section-landing-title.principal {
       font-size: 1.3rem;
       margin-left: 0; } }
+
+.section-landing-title.sub {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: #e06f1a;
+  transform: rotate(2deg);
+  font-weight: 700;
+  padding: 6px 12px;
+  border: 1px dashed #e06f1a;
+  display: inline-block;
+  margin-bottom: 24px; }
 
 @media screen and (max-width: 768px) {
   .landing-presentation {
@@ -8988,3 +9006,20 @@ body {
   display: block;
   margin: 0 auto;
   max-width: 200px; }
+
+.invitado {
+  margin-top: 24px; }
+  .invitado .wrap {
+    margin: 6px;
+    background-color: #333;
+    color: white;
+    padding: 24px;
+    transform: rotate(-1deg); }
+  .invitado h3 {
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 400; }
+
+.component-formulario .wrap {
+  padding: 24px;
+  background-color: #f0f0f0; }

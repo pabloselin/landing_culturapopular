@@ -48,7 +48,7 @@ $fondoheader = $contents['cpl_header'];
 
 	<?php wp_head();?>
 </head>
-<body>
+<body <?php body_class();?> >
 	<?php include( plugin_dir_path( __FILE__ ) . 'navbar.php');?>
 	<section class="header">
 		<div class="jumbotron landing-presentation" style="background-image: url(<?php echo $fondoheader;?>);">
